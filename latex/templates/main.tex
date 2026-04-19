@@ -1,0 +1,98 @@
+% ============================================================
+%  VLM Math — Template principal
+%  Usage : \def\AVECSOLUTIONS{1}  pour la version corrigée
+% ============================================================
+\documentclass[12pt, a4paper]{book}
+
+% --- Packages ---
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\geometry{margin=2.5cm}
+
+% --- Couleurs ---
+\definecolor{vlmblue}{RGB}{25, 90, 160}
+\definecolor{vlmgray}{RGB}{245, 245, 245}
+\definecolor{vlmgreen}{RGB}{0, 130, 80}
+
+% --- Environnement exercice ---
+\newmdenv[
+  backgroundcolor=vlmgray,
+  linecolor=vlmblue,
+  linewidth=2pt,
+  leftline=true, rightline=false, topline=false, bottomline=false,
+  innerleftmargin=12pt,
+  innerrightmargin=8pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+]{exercicebox}
+
+\newenvironment{exercice}[2]{%
+  \begin{exercicebox}
+  \textbf{\textcolor{vlmblue}{Exercice #1}} \hfill \textit{#2}
+  \medskip\par
+}{%
+  \end{exercicebox}\medskip
+}
+
+% --- Environnement solution (conditionnel) ---
+\ifdefined\AVECSOLUTIONS
+  \newmdenv[
+    backgroundcolor=white,
+    linecolor=vlmgreen,
+    linewidth=2pt,
+    leftline=true, rightline=false, topline=false, bottomline=false,
+    innerleftmargin=12pt,
+    innertopmargin=6pt,
+    innerbottommargin=6pt,
+  ]{solutionbox}
+
+  \newenvironment{solution}[1]{%
+    \begin{solutionbox}
+    \textbf{\textcolor{vlmgreen}{Solution #1}}\medskip\par
+  }{%
+    \end{solutionbox}\medskip
+  }
+\else
+  % Version élève : les solutions sont invisibles
+  \newenvironment{solution}[1]{\comment}{\endcomment}
+  \usepackage{verbatim} % for \comment
+\fi
+
+% --- En-têtes ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{vlmblue}{\textbf{VLM Mathématiques}}}
+\fancyhead[R]{\textit{\leftmark}}
+\fancyfoot[C]{\thepage}
+
+% ============================================================
+\begin{document}
+
+\title{{\Huge\textbf{VLM Mathématiques}}\\[0.5em]
+       \large Recueil d'exercices
+       \ifdefined\AVECSOLUTIONS
+         \\[0.3em]\textcolor{vlmgreen}{\large — Version corrigée —}
+       \fi}
+\author{Collectif VLM}
+\date{Édition 2025}
+\maketitle
+\tableofcontents
+
+% ============================================================
+% Inclure les chapitres (générés par le script Python)
+% ============================================================
+\input{generated/ch01-algebre}
+\input{generated/ch02-geometrie}
+\input{generated/ch03-trigonometrie}
+
+\end{document}
