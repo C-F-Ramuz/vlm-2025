@@ -169,18 +169,15 @@ def generate_latex_chapters(conn: sqlite3.Connection):
         """, (chapitre,)).fetchall()
 
         lines = [
-            f"\\chapter{{{nom}}}",
+            f"\\chapter*{{}}",
+            f"\\addcontentsline{{toc}}{{chapter}}{{{nom}}}",
             ""
         ]
-        current_section = None
         for ex_id, titre, section, latex_ex, latex_sol in exercices:
-            if section != current_section:
-                lines.append(f"\\section{{{section}}}")
-                current_section = section
             lines.append(latex_ex)
-            lines.append(latex_sol)   # invisible côté élève grâce à \ifdefined\AVECSOLUTIONS
+            lines.append(latex_sol)
             lines.append("")
-
+            
         nom_clean = nom.lower().replace(' ','-').replace('è','e').replace('é','e').replace('ê','e').replace('à','a').replace('ô','o').replace('î','i').replace('ù','u')
         out_file = LATEX_OUT_DIR / f"ch{chapitre:02d}-{nom_clean}.tex"
         out_file.write_text("\n".join(lines), encoding="utf-8")
