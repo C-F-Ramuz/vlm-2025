@@ -1,0 +1,48 @@
+[
+  {
+    "id": "EX-CH01-001",
+    "titre": "Résolution d'équation du second degré",
+    "chapitre": 1,
+    "chapitre_nom": "Algèbre",
+    "section": "Équations",
+    "niveau": "secondaire2",
+    "difficulte": 2,
+    "auteur": "Dupont M.",
+    "annee": 2025,
+    "modifie_le": "2026-04-19T13:39:25.747372",
+    "tags": [
+      "algèbre",
+      "discriminant",
+      "second-degré",
+      "équation"
+    ],
+    "objectifs": [
+      "Calculer le discriminant",
+      "Trouver les racines d'un trinôme"
+    ]
+  },
+  {
+    "id": "EX-CH03-007",
+    "titre": "Valeurs exactes du cercle trigonométrique",
+    "chapitre": 3,
+    "chapitre_nom": "Trigonométrie",
+    "section": "Cercle trigonométrique",
+    "niveau": "secondaire2",
+    "difficulte": 1,
+    "auteur": "Martin S.",
+    "annee": 2025,
+    "modifie_le": "2026-04-19T13:39:25.747377",
+    "tags": [
+      "cercle",
+      "cos",
+      "radians",
+      "sin",
+      "trigonométrie",
+      "valeurs-exactes"
+    ],
+    "objectifs": [
+      "Lire des valeurs sur le cercle trigonométrique",
+      "Convertir degrés et radians"
+    ]
+  }
+]
