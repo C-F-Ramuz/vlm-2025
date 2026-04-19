@@ -2,14 +2,16 @@
   {
     "id": "EX-CH01-001",
     "titre": "Résolution d'équation du second degré",
-    "chapitre": 1,
-    "chapitre_nom": "Algèbre",
-    "section": "Équations",
-    "niveau": "secondaire2",
+    "chapitre_id": null,
+    "chapitres_extra": "[]",
+    "annee_scolaire": "",
     "difficulte": 2,
     "auteur": "Dupont M.",
-    "annee": 2025,
     "modifie_le": "2026-04-19T12:38:45",
+    "latex_exercice": "\\begin{exercice}{EX-CH01-001}{Résolution d'équation du second degré}\n\nRésoudre dans $\\mathbb{R}$ les équations suivantes~:\n\n\\begin{enumerate}[label=\\alph*)]\n  \\item $2x^2 - 5x + 3 = 0$\n  \\item $x^2 + 4x + 5 = 0$\n  \\item $3x^2 - 12 = 0$\n\\end{enumerate}\n\n\\end{exercice}",
+    "chapitre_nom": null,
+    "domaine_code": null,
+    "domaine_nom": null,
     "tags": [
       "algèbre",
       "discriminant",
@@ -24,14 +26,16 @@
   {
     "id": "EX-CH03-007",
     "titre": "Valeurs exactes du cercle trigonométrique",
-    "chapitre": 3,
-    "chapitre_nom": "Trigonométrie",
-    "section": "Cercle trigonométrique",
-    "niveau": "secondaire2",
+    "chapitre_id": null,
+    "chapitres_extra": "[]",
+    "annee_scolaire": "",
     "difficulte": 1,
     "auteur": "Martin S.",
-    "annee": 2025,
     "modifie_le": "2026-04-19T12:38:54",
+    "latex_exercice": "\\begin{exercice}{EX-CH03-007}{Valeurs exactes du cercle trigonométrique}\n\nSans calculatrice, donner les valeurs exactes de~:\n\n\\begin{multicols}{2}\n\\begin{enumerate}[label=\\alph*)]\n  \\item $\\sin\\!\\left(\\dfrac{\\pi}{6}\\right)$\n  \\item $\\cos\\!\\left(\\dfrac{\\pi}{4}\\right)$\n  \\item $\\tan\\!\\left(\\dfrac{\\pi}{3}\\right)$\n  \\item $\\sin\\!\\left(\\dfrac{3\\pi}{2}\\right)$\n  \\item $\\cos(\\pi)$\n  \\item $\\tan\\!\\left(\\dfrac{5\\pi}{4}\\right)$\n\\end{enumerate}\n\\end{multicols}\n\n\\end{exercice}",
+    "chapitre_nom": null,
+    "domaine_code": null,
+    "domaine_nom": null,
     "tags": [
       "cercle",
       "cos",
@@ -44,5 +48,50 @@
       "Lire des valeurs sur le cercle trigonométrique",
       "Convertir degrés et radians"
     ]
+  },
+  {
+    "id": "EX-CH03-008",
+    "titre": "Trigo \"piano\"",
+    "chapitre_id": null,
+    "chapitres_extra": "[]",
+    "annee_scolaire": "",
+    "difficulte": 1,
+    "auteur": "Bussy D.",
+    "modifie_le": "2026-04-19T16:01:13.675927",
+    "latex_exercice": "",
+    "chapitre_nom": null,
+    "domaine_code": null,
+    "domaine_nom": null,
+    "tags": [
+      "cercle",
+      "cos",
+      "radians",
+      "sin",
+      "trigonométrie",
+      "valeurs-exactes"
+    ],
+    "objectifs": [
+      "Lire des valeurs sur le cercle trigonométrique",
+      "Convertir degrés et radians"
+    ]
+  },
+  {
+    "id": "EX-CH00-000",
+    "titre": "Titre court de l'exercice",
+    "chapitre_id": 0,
+    "chapitres_extra": "[]",
+    "annee_scolaire": "9H",
+    "difficulte": 1,
+    "auteur": "Prénom Nom",
+    "modifie_le": "2026-04-19T21:47:13.638038",
+    "latex_exercice": "\\begin{exercice}{EX-CH00-000}{Titre court de l'exercice}\n\nÉnoncé de l'exercice en \\LaTeX.\n\n\\end{exercice}",
+    "chapitre_nom": null,
+    "domaine_code": null,
+    "domaine_nom": null,
+    "tags": [
+      "tag1",
+      "tag2"
+    ],
+    "objectifs": []
   }
 ]

@@ -73,22 +73,6 @@ def parse_exercise_file(filepath: Path) -> dict | None:
         meta["tags"] = [t.strip() for t in meta["tags"].split(",")]
     meta["tags"] = meta.get("tags") or []
 
-    # Compatibilité avec les anciens champs encore dans le INSERT
-    meta.setdefault("chapitre", None)
-    meta.setdefault("chapitre_nom", None)
-    meta.setdefault("section", None)
-    meta.setdefault("niveau", None)
-    meta.setdefault("annee", None)
-    meta.setdefault("source", None)
-    
-    # Normaliser les nouveaux champs
-    meta["chapitre_id"] = meta.get("chapitre_id", None)
-    chapitres_extra = meta.get("chapitres_extra", [])
-    if not isinstance(chapitres_extra, list):
-        chapitres_extra = []
-    meta["chapitres_extra"] = json.dumps(chapitres_extra)
-    meta["annee_scolaire"] = str(meta.get("annee_scolaire", ""))
-
     return meta
 
 # ── 2. Base de données SQLite ─────────────────────────────────────
@@ -104,14 +88,11 @@ def init_db(conn: sqlite3.Connection):
             difficulte    INTEGER,
             auteur        TEXT,
             annee         INTEGER,
-            source         TEXT,
-            fichier        TEXT,
-            modifie_le     TEXT,
+            source        TEXT,
+            fichier       TEXT,
+            modifie_le    TEXT,
             latex_exercice TEXT,
-            latex_solution TEXT,
-            chapitre_id    INTEGER,
-            chapitres_extra TEXT DEFAULT '[]',
-            annee_scolaire TEXT DEFAULT ''
+            latex_solution TEXT
         );
 
         CREATE TABLE IF NOT EXISTS tags (
@@ -133,29 +114,24 @@ def upsert_exercise(conn: sqlite3.Connection, meta: dict):
     conn.execute("""
         INSERT INTO exercices
             (id, titre, chapitre, chapitre_nom, section, niveau, difficulte,
-             auteur, annee, source, fichier, modifie_le, latex_exercice, latex_solution,
-             chapitre_id, chapitres_extra, annee_scolaire)
+             auteur, annee, source, fichier, modifie_le, latex_exercice, latex_solution)
         VALUES
             (:id, :titre, :chapitre, :chapitre_nom, :section, :niveau, :difficulte,
-             :auteur, :annee, :source, :fichier, :modifie_le, :latex_exercice, :latex_solution,
-             :chapitre_id, :chapitres_extra, :annee_scolaire)
+             :auteur, :annee, :source, :fichier, :modifie_le, :latex_exercice, :latex_solution)
         ON CONFLICT(id) DO UPDATE SET
-            titre           = excluded.titre,
-            chapitre        = excluded.chapitre,
-            chapitre_nom    = excluded.chapitre_nom,
-            section         = excluded.section,
-            niveau          = excluded.niveau,
-            difficulte      = excluded.difficulte,
-            auteur          = excluded.auteur,
-            annee           = excluded.annee,
-            source          = excluded.source,
-            fichier         = excluded.fichier,
-            modifie_le      = excluded.modifie_le,
-            latex_exercice  = excluded.latex_exercice,
-            latex_solution  = excluded.latex_solution,
-            chapitre_id     = excluded.chapitre_id,
-            chapitres_extra = excluded.chapitres_extra,
-            annee_scolaire  = excluded.annee_scolaire
+            titre          = excluded.titre,
+            chapitre       = excluded.chapitre,
+            chapitre_nom   = excluded.chapitre_nom,
+            section        = excluded.section,
+            niveau         = excluded.niveau,
+            difficulte     = excluded.difficulte,
+            auteur         = excluded.auteur,
+            annee          = excluded.annee,
+            source         = excluded.source,
+            fichier        = excluded.fichier,
+            modifie_le     = excluded.modifie_le,
+            latex_exercice = excluded.latex_exercice,
+            latex_solution = excluded.latex_solution
     """, meta)
 
     # Tags : supprimer puis réinsérer
@@ -180,13 +156,9 @@ def generate_latex_chapters(conn: sqlite3.Connection):
     Génère un fichier .tex par chapitre contenant tous les exercices
     (et leurs solutions, car le template main.tex gère la visibilité).
     """
-    rows = conn.execute("""
-        SELECT DISTINCT e.chapitre_id, c.nom
-        FROM exercices e
-        JOIN chapitres c ON c.id = e.chapitre_id
-        WHERE e.chapitre_id IS NOT NULL
-        ORDER BY e.chapitre_id
-    """).fetchall()
+    rows = conn.execute(
+        "SELECT DISTINCT chapitre, chapitre_nom FROM exercices ORDER BY chapitre"
+    ).fetchall()
     
     compteur_global = 1
 
@@ -194,7 +166,7 @@ def generate_latex_chapters(conn: sqlite3.Connection):
         exercices = conn.execute("""
             SELECT e.id, e.titre, e.section, e.latex_exercice, e.latex_solution
             FROM exercices e
-            WHERE e.chapitre_id = ?
+            WHERE e.chapitre = ?
             ORDER BY e.id
         """, (chapitre,)).fetchall()
 
@@ -228,21 +200,16 @@ def generate_latex_chapters(conn: sqlite3.Connection):
 # ── 4. Export JSON pour le site web ──────────────────────────────
 def export_json(conn: sqlite3.Connection):
     exercices = conn.execute("""
-        SELECT e.id, e.titre, e.chapitre_id, e.chapitres_extra,
-               e.annee_scolaire, e.difficulte, e.auteur, e.modifie_le,
-               e.latex_exercice,
-               c.nom  AS chapitre_nom,
-               d.code AS domaine_code,
-               d.nom  AS domaine_nom
-        FROM exercices e
-        LEFT JOIN chapitres c ON c.id = e.chapitre_id
-        LEFT JOIN domaines  d ON d.id = c.domaine_id
-        ORDER BY e.chapitre_id, e.id
+        SELECT id, titre, chapitre, chapitre_nom, section,
+               niveau, difficulte, auteur, annee, modifie_le,
+               latex_exercice
+        FROM exercices
+        ORDER BY chapitre, id
     """).fetchall()
 
-    cols = ["id", "titre", "chapitre_id", "chapitres_extra",
-            "annee_scolaire", "difficulte", "auteur", "modifie_le",
-            "latex_exercice", "chapitre_nom", "domaine_code", "domaine_nom"]
+    cols = ["id","titre","chapitre","chapitre_nom","section",
+            "niveau","difficulte","auteur","annee","modifie_le",
+            "latex_exercice"]
     result = []
     for row in exercices:
         ex = dict(zip(cols, row))
@@ -301,19 +268,15 @@ def main():
             generate_latex_chapters(conn)
             
 # Générer main.tex automatiquement
-    chapitres_list = conn.execute("""
-        SELECT DISTINCT e.chapitre_id, c.nom
-        FROM exercices e
-        JOIN chapitres c ON c.id = e.chapitre_id
-        WHERE e.chapitre_id IS NOT NULL
-        ORDER BY e.chapitre_id
-    """).fetchall()
+    chapitres_list = conn.execute(
+        "SELECT DISTINCT chapitre, chapitre_nom FROM exercices ORDER BY chapitre"
+    ).fetchall()
     
     inputs = "\n".join([
         f"\\input{{latex/generated/ch{chapitre:02d}-{nom.lower().replace(' ','-').replace('è','e').replace('é','e').replace('ê','e').replace('à','a').replace('ô','o').replace('î','i').replace('ù','u')}}}"
         for chapitre, nom in chapitres_list
     ])
-        
+    
     main_template = BASE_DIR / "latex" / "templates" / "main_template.tex"
     main_out = BASE_DIR / "latex" / "templates" / "main.tex"
     

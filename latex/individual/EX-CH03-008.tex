@@ -1,0 +1,66 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{verbatim}
+
+\geometry{margin=2.5cm}
+
+\definecolor{vlmblue}{RGB}{25, 90, 160}
+\definecolor{vlmgray}{RGB}{245, 245, 245}
+\definecolor{vlmgreen}{RGB}{0, 130, 80}
+
+% ── Titre de l'exercice dans un encadré ──
+\newcommand{\titrexercice}[2]{%
+  \begin{mdframed}[
+    backgroundcolor=vlmgray,
+    linecolor=vlmblue,
+    linewidth=1.5pt,
+    innerleftmargin=10pt,
+    innerrightmargin=10pt,
+    innertopmargin=6pt,
+    innerbottommargin=6pt,
+    skipabove=1em,
+    skipbelow=0.5em
+  ]
+  \textbf{\textcolor{vlmblue}{Exercice #1}}%
+  \ifx&#2&\else\hfill\textbf{#2}\fi
+  \end{mdframed}
+}
+
+% ── Corps de l'exercice sans cadre ──
+\newenvironment{exercice}[2]{%
+  \titrexercice{#1}{#2}
+  \vspace{0.3em}
+}{%
+  \vspace{1em}
+}
+
+% ── Solution ──
+\ifdefined\AVECSOLUTIONS
+  \newenvironment{solution}[1]{%
+    \vspace{0.3em}
+    \textbf{\textcolor{vlmgreen}{Solution #1}}
+    \vspace{0.3em}\par
+  }{%
+    \vspace{1em}
+  }
+\else
+  \newenvironment{solution}[1]{\comment}{\endcomment}
+\fi
+
+\pagestyle{empty}
+
+\begin{document}
+
+
+\end{document}
