@@ -1,0 +1,62 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{verbatim}
+
+\geometry{margin=2.5cm}
+
+\definecolor{vlmblue}{RGB}{25, 90, 160}
+\definecolor{vlmgray}{RGB}{245, 245, 245}
+\definecolor{vlmgreen}{RGB}{0, 130, 80}
+
+\newmdenv[
+  backgroundcolor=vlmgray,
+  linecolor=vlmblue,
+  linewidth=2pt,
+  leftline=true, rightline=false, topline=false, bottomline=false,
+  innerleftmargin=12pt,
+  innerrightmargin=8pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+]{exercicebox}
+
+\newenvironment{exercice}[2]{%
+  \begin{exercicebox}
+  \textbf{\textcolor{vlmblue}{Exercice #1}} \hfill \textit{#2}
+  \medskip\par
+}{%
+  \end{exercicebox}
+}
+
+\ifdefined\AVECSOLUTIONS
+  \newmdenv[
+    backgroundcolor=white,
+    linecolor=vlmgreen,
+    linewidth=2pt,
+    leftline=true, rightline=false, topline=false, bottomline=false,
+    innerleftmargin=12pt,
+    innertopmargin=6pt,
+    innerbottommargin=6pt,
+  ]{solutionbox}
+  \newenvironment{solution}[1]{%
+    \begin{solutionbox}
+    \textbf{\textcolor{vlmgreen}{Solution #1}}\medskip\par
+  }{%
+    \end{solutionbox}
+  }
+\else
+  \newenvironment{solution}[1]{\comment}{\endcomment}
+\fi
+
+\pagestyle{empty}
+
+\begin{document}
+%%CONTENU%%
+\end{document}

@@ -304,9 +304,15 @@ function render() {
           🎯 ${e.objectifs?.join(" · ") || ""}
         </div>
         <div class="latex-preview">${escHtml(e.latex_exercice)}</div>
-        <button class="copy-btn" onclick="copyLatex(event, '${e.id}')">
-          📋 Copier le LaTeX
-        </button>
+        <div style="display:flex;gap:.5rem;margin-top:.75rem">
+  <button class="copy-btn" onclick="copyLatex(event, '${e.id}')">
+    📋 Copier le LaTeX
+  </button>
+  <a class="copy-btn" href="pdfs/exercices/${e.id}.pdf" 
+     target="_blank" style="text-decoration:none">
+    📄 PDF élève
+  </a>
+</div>
       </div>
     </div>
   `).join("");

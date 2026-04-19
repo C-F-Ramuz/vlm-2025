@@ -66,6 +66,21 @@ jobs:
 
       - name: Compiler PDF corrigé
         run: make corrige
+       - name: Compiler les PDFs individuels (élève)
+        run: |
+          mkdir -p latex/output/individual
+          for f in latex/individual/EX-*.tex; do
+            id=$(basename "$f" .tex)
+            latexmk -pdf \
+              -jobname="$id" \
+              -outdir=latex/output/individual \
+              "$f" || true
+          done
+
+      - name: Copier les PDFs dans le site
+        run: |
+          mkdir -p site/pdfs/exercices
+          cp latex/output/individual/*.pdf site/pdfs/exercices/ 2>/dev/null || true
 
       - name: Upload PDFs
         uses: actions/upload-artifact@v4

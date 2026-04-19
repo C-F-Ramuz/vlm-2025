@@ -214,6 +214,26 @@ def export_json(conn: sqlite3.Connection):
     print(f"  📦 JSON exporté : {JSON_PATH} ({len(result)} exercices)")
 
 # ── Main ──────────────────────────────────────────────────────────
+def generate_individual_pdfs(conn: sqlite3.Connection):
+    """Génère un fichier .tex par exercice pour compilation individuelle."""
+    INDIV_DIR = BASE_DIR / "latex" / "individual"
+    INDIV_DIR.mkdir(parents=True, exist_ok=True)
+
+    template_path = BASE_DIR / "latex" / "templates" / "exercice_seul.tex"
+    template = template_path.read_text(encoding="utf-8")
+
+    exercices = conn.execute(
+        "SELECT id, latex_exercice, latex_solution FROM exercices"
+    ).fetchall()
+
+    for ex_id, latex_ex, latex_sol in exercices:
+        contenu = (latex_ex or "") + "\n" + (latex_sol or "")
+        tex = template.replace("%%CONTENU%%", contenu)
+        out = INDIV_DIR / f"{ex_id}.tex"
+        out.write_text(tex, encoding="utf-8")
+
+    print(f"  📄 {len(exercices)} fichiers .tex individuels générés")
+    
 def main():
     parser = argparse.ArgumentParser(description="VLM Build Tool")
     parser.add_argument("--db-only",   action="store_true")
@@ -253,6 +273,9 @@ def main():
     template = template.replace("%%CHAPITRES%%", inputs)
     main_out.write_text(template, encoding="utf-8")
     print(f"  📄 main.tex généré avec {len(chapitres_list)} chapitres")
+    
+    print("\n📄 Génération des PDF individuels…")
+    generate_individual_pdfs(conn)
 
     print("\n📦 Export JSON…")
     export_json(conn)
