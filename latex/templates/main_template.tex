@@ -12,9 +12,18 @@
 \usepackage{xcolor}
 \usepackage{mdframed}
 \usepackage{hyperref}
+\hypersetup{
+  colorlinks=false,
+  pdfborder={0 0 0}
+}
 \usepackage{fancyhdr}
 
 \setcounter{tocdepth}{0}
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapaftersnum}{}
 
 \geometry{margin=2.5cm}
 
@@ -26,7 +35,7 @@
 \newcommand{\titrexercice}[2]{%
   \begin{mdframed}[
     backgroundcolor=vlmgray,
-    linecolor=vlmblue,
+    linecolor=black,
     linewidth=1.5pt,
     innerleftmargin=10pt,
     innerrightmargin=10pt,
@@ -35,7 +44,7 @@
     skipabove=1em,
     skipbelow=0.5em
   ]
-  \textbf{\textcolor{vlmblue}{Exercice #1}}%
+  \textbf{Exercice #1}%
   \ifx&#2&\else\hfill\textbf{#2}\fi
   \end{mdframed}
 }
