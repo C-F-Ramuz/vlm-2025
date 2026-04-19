@@ -66,6 +66,7 @@ jobs:
 
       - name: Compiler PDF corrigé
         run: make corrige
+
       - name: Compiler les PDFs individuels (élève)
         run: |
           mkdir -p latex/output/individual
@@ -74,6 +75,18 @@ jobs:
             latexmk -pdf \
               -jobname="$id" \
               -outdir=latex/output/individual \
+              "$f" || true
+          done
+
+      - name: Compiler les PDFs individuels corrigés
+        run: |
+          mkdir -p latex/output/individual-corrige
+          for f in latex/individual/EX-*.tex; do
+            id=$(basename "$f" .tex)
+            latexmk -pdf \
+              -jobname="${id}-corrige" \
+              -outdir=latex/output/individual-corrige \
+              -usepretex="\def\AVECSOLUTIONS{1}" \
               "$f" || true
           done
 
@@ -90,6 +103,7 @@ jobs:
             latex/output/vlm-eleve.pdf
             latex/output/vlm-corrige.pdf
             latex/output/individual/
+            latex/output/individual-corrige/
 
   # ── Job 3 : Déployer le site ─────────────────────────────────
   deploy-site:
@@ -111,10 +125,12 @@ jobs:
         with:
           name: vlm-pdfs
           path: site/pdfs/
+
       - name: Déplacer les PDFs individuels
         run: |
           mkdir -p site/pdfs/exercices
           mv site/pdfs/individual/*.pdf site/pdfs/exercices/ 2>/dev/null || true
+          mv site/pdfs/individual-corrige/*.pdf site/pdfs/exercices/ 2>/dev/null || true
 
       - name: Déployer sur GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
