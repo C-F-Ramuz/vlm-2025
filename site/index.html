@@ -371,36 +371,15 @@ const MOT_DE_PASSE = "vlm2025prof"; // ← changez ce mot de passe !
 let pendingUrl = "";
 
 function openCorrige(url) {
-  const base = window.location.origin + '/vlm-2025/';
-  pendingUrl = base + url;
-  document.getElementById("modalOverlay").classList.add("visible");
-  document.getElementById("passwordInput").value = "";
-  document.getElementById("errorMsg").style.display = "none";
-  setTimeout(() => document.getElementById("passwordInput").focus(), 100);
-}
-
-function closeModal() {
-  document.getElementById("modalOverlay").classList.remove("visible");
-  pendingUrl = "";
-}
-
-function checkPassword() {
-  const val = document.getElementById("passwordInput").value;
-  if (val === MOT_DE_PASSE) {
-    closeModal();
-    const a = document.createElement("a");
-    a.href = pendingUrl;
-    a.target = "_blank";
-    a.rel = "noopener";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+  const pwd = prompt("🔒 Entrez le mot de passe enseignant :");
+  if (pwd === null) return;
+  if (pwd === MOT_DE_PASSE) {
+    window.open(url, "_blank");
   } else {
-    document.getElementById("errorMsg").style.display = "block";
-    document.getElementById("passwordInput").value = "";
-    document.getElementById("passwordInput").focus();
+    alert("Mot de passe incorrect.");
   }
 }
+
 
 document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("btnAcceder").addEventListener("click", checkPassword);
