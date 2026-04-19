@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1776611683.73146 "latex/individual/EX-CH03-007.tex" "latex/output/individual/EX-CH03-007.pdf" "EX-CH03-007" 1776611684.2266 0
+["pdflatex"] 1776612215.54027 "latex/individual/EX-CH03-007.tex" "latex/output/individual/EX-CH03-007.pdf" "EX-CH03-007" 1776612216.0583 0
   "/etc/texmf/web2c/texmf.cnf" 1776115481.10083 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -75,14 +75,14 @@
   "/usr/share/texlive/texmf-dist/tex/latex/zref/zref-base.sty" 1694723124 20785 f7d1133a287929598a897c93f8f4c44b ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1636152094 2971 def0b6c1f0b107b3b936def894055589 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb" 1776611538.91277 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb" 1776611539.03354 136101 f533469f523533d38317ab5729d00c8a ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb" 1776611539.12548 198221 ca5aa71411090ef358a6cc78b7458365 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb" 1776612064.89414 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb" 1776612065.02714 136101 f533469f523533d38317ab5729d00c8a ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb" 1776612065.13014 198221 ca5aa71411090ef358a6cc78b7458365 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1776611545.91747 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776611609 8213802 e7e499f84324d2f3c340c362025b61f2 ""
-  "latex/individual/EX-CH03-007.tex" 1776611680.59622 2282 ea570b0c3bec87bc1bede52906910b51 ""
-  "latex/output/individual/EX-CH03-007.aux" 1776611684.16823 226 5af9876d33104197000f4b7c9d5a9a5e "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1776612072.00521 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776612174 8212731 5f3cf2b6d42b42891777bdce821291ad ""
+  "latex/individual/EX-CH03-007.tex" 1776612212.31141 2282 ea570b0c3bec87bc1bede52906910b51 ""
+  "latex/output/individual/EX-CH03-007.aux" 1776612215.99967 226 5af9876d33104197000f4b7c9d5a9a5e "pdflatex"
   (generated)
   "latex/output/individual/EX-CH03-007.aux"
   "latex/output/individual/EX-CH03-007.log"
