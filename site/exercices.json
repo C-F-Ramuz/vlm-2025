@@ -1,29 +1,5 @@
 [
   {
-    "id": "EX-CH01-001",
-    "titre": "Résolution d'équation du second degré",
-    "chapitre_id": null,
-    "chapitres_extra": "[]",
-    "annee_scolaire": "",
-    "difficulte": 2,
-    "auteur": "Dupont M.",
-    "modifie_le": "2026-04-19T12:38:45",
-    "latex_exercice": "\\begin{exercice}{EX-CH01-001}{Résolution d'équation du second degré}\n\nRésoudre dans $\\mathbb{R}$ les équations suivantes~:\n\n\\begin{enumerate}[label=\\alph*)]\n  \\item $2x^2 - 5x + 3 = 0$\n  \\item $x^2 + 4x + 5 = 0$\n  \\item $3x^2 - 12 = 0$\n\\end{enumerate}\n\n\\end{exercice}",
-    "chapitre_nom": null,
-    "domaine_code": null,
-    "domaine_nom": null,
-    "tags": [
-      "algèbre",
-      "discriminant",
-      "second-degré",
-      "équation"
-    ],
-    "objectifs": [
-      "Calculer le discriminant",
-      "Trouver les racines d'un trinôme"
-    ]
-  },
-  {
     "id": "EX-CH03-007",
     "titre": "Valeurs exactes du cercle trigonométrique",
     "chapitre_id": null,
@@ -91,6 +67,25 @@
     "tags": [
       "tag1",
       "tag2"
+    ],
+    "objectifs": []
+  },
+  {
+    "id": "EX-CH01-001",
+    "titre": "Divisibilité",
+    "chapitre_id": 1,
+    "chapitres_extra": "[]",
+    "annee_scolaire": "9H",
+    "difficulte": 1,
+    "auteur": "Bussi D.",
+    "modifie_le": "2026-04-19T22:12:37.475876",
+    "latex_exercice": "\\begin{exercice}{EX-CH01-001}{Divisibilité}\n\nComplète les tableaux suivants:\n\\bigskip\n\n\\textbf{A.}\n\\bigskip\n\n\n\\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|} \n\\hline\n\\textbf{divisible par...} & \\textbf{2} \\; \\; & \\textbf{3} \\; \\; & \\textbf{4} \\; \\; & \\textbf{5}  \\; \\;& \\textbf{6}  \\; \\;&  \\textbf{9}  \\; \\;&  \\textbf{10} \\; \\; &  \\textbf{25} \\; \\; &  \\textbf{50} \\; \\; &  \\textbf{75} \\; \\; &  \\textbf{100}  \\\\ \n\\hline\n\\textbf{13464}            &           &           &           &            &  &  &    &    &    &    &      \\\\ \n\\hline\n\\textbf{1800}            &           &            &           &           &   &   &   &   &   &    &     \\\\ \n\\hline\n\\textbf{36275}            &            &            &            &           &   &   &    &   &    &   &      \\\\ \n\\hline\n\\textbf{41080}            &           &            &           &           &   &   &   &    &    &    &      \\\\ \n\\hline\n\\textbf{410205}           &            &           &            &           &   &   &    &    &    &    &      \\\\ \n\\hline\n\\textbf{12350}            &           &            &            &           &   &   &   &   &  &    &      \\\\\n\\hline\n\\end{tabular}\n\\bigskip\n\n\n\n\\textbf{B.}\n\\bigskip\n\n\\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|} \n\\hline\n\\textbf{divisible par...} & \\textbf{2} \\; \\; & \\textbf{3} \\; \\; & \\textbf{4} \\; \\; & \\textbf{5}  \\; \\;& \\textbf{6}  \\; \\;&  \\textbf{9}  \\; \\;&  \\textbf{10} \\; \\; &  \\textbf{25} \\; \\; &  \\textbf{50} \\; \\; &  \\textbf{75} \\; \\; &  \\textbf{100}  \\\\ \\hline\n\\textbf{43464}            &           &           &           &            &  &   &    &    &    &    &      \\\\ \n\\hline\n1\\textbf{8800}            &           &            &           &           &   &   &   &   &   &    &     \\\\ \n\\hline\n\\textbf{6275}             &            &            &            &           &   &   &    &   &    &   &      \\\\ \n\\hline\n\\textbf{91080}            &           &           &           &           &  &  &   &    &    &    &      \\\\ \n\\hline\n\\textbf{610290}           &            &           &            &           &   &  &   &    &    &    &      \\\\ \n\\hline\n\\textbf{52350}            &           &           &            &           &  &   &   &   &   &    &      \\\\\n\\hline\n\\end{tabular}\n\\bigskip\n\\bigskip\n\n\\textbf{C.}\n\\bigskip\n\n\\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|} \n\\hline\n\\textbf{divisible par...} & \\textbf{2} \\; \\; & \\textbf{3} \\; \\; & \\textbf{4} \\; \\; & \\textbf{5}  \\; \\;& \\textbf{6}  \\; \\;&  \\textbf{9}  \\; \\;&  \\textbf{10} \\; \\; &  \\textbf{25} \\; \\; &  \\textbf{50} \\; \\; &  \\textbf{75} \\; \\; &  \\textbf{100}  \\\\ \n\\hline\n\\textbf{17820}            &           &           &          &           &  &  &   &    &    &    &      \\\\ \n\\hline\n46200                     &           &           &           &           &  &   &   &   &   &    &     \\\\ \n\\hline\n71180                     &           &            &           &           &   &   &   &    &    &    &      \\\\ \n\\hline\n\\textbf{610215}           &            &           &            &           &   &   &    &    &    &    &      \\\\ \n\\hline\n\\textbf{62352}            &           &          &           &            &  &  &    &    &    &    &      \\\\ \n\\hline\n\\textbf{256400}           &           &            &           &           &   &   &   &   &   &    &     \\\\\n\\hline\n\\end{tabular}\n\\bigskip\n\n\\textbf{D.}\n\\bigskip\n\n\\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|} \n\\hline\n\\textbf{divisible par...} & \\textbf{2} \\; \\; & \\textbf{3} \\; \\; & \\textbf{4} \\; \\; & \\textbf{5}  \\; \\;& \\textbf{6}  \\; \\;&  \\textbf{9}  \\; \\;&  \\textbf{10} \\; \\; &  \\textbf{25} \\; \\; &  \\textbf{50} \\; \\; &  \\textbf{75} \\; \\; &  \\textbf{100}  \\\\ \\hline\n\\textbf{1880}            &           &          &           &           &  &  &   &    &    &    &      \\\\ \n\\hline\n28530                     &           &           &           &           &  &   &   &   &  &    &     \\\\ \n\\hline\n925                     &           &            &           &           &   &   &   &    &    &    &      \\\\ \n\\hline\n\\textbf{15--  --}           & x           &           & x           & x          &   &   & x   &    &    &    &      \\\\ \n\\hline\n\\textbf{275985}            &           &           &           &            &  &  &    &    &    &    &      \\\\ \n\\hline\n\\textbf{387--   --}           & x          & x           & x         &           &x  &  x &   &   &   &    &     \\\\\n\\hline\n\\end{tabular}\n\n\\end{exercice}",
+    "chapitre_nom": "Nombres entiers & divisibilité",
+    "domaine_code": "MSN31",
+    "domaine_nom": "Nombres & Opérations",
+    "tags": [
+      "diviseurs",
+      "divisibilite"
     ],
     "objectifs": []
   }
