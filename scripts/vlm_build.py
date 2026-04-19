@@ -190,13 +190,15 @@ def generate_latex_chapters(conn: sqlite3.Connection):
 def export_json(conn: sqlite3.Connection):
     exercices = conn.execute("""
         SELECT id, titre, chapitre, chapitre_nom, section,
-               niveau, difficulte, auteur, annee, modifie_le
+               niveau, difficulte, auteur, annee, modifie_le,
+               latex_exercice
         FROM exercices
         ORDER BY chapitre, id
     """).fetchall()
 
     cols = ["id","titre","chapitre","chapitre_nom","section",
-            "niveau","difficulte","auteur","annee","modifie_le"]
+            "niveau","difficulte","auteur","annee","modifie_le",
+            "latex_exercice"]
     result = []
     for row in exercices:
         ex = dict(zip(cols, row))
