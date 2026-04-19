@@ -86,7 +86,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: vlm-pdfs
-          path: latex/output/*.pdf
+          path: |
+            latex/output/vlm-eleve.pdf
+            latex/output/vlm-corrige.pdf
+            latex/output/individual/
 
   # ── Job 3 : Déployer le site ─────────────────────────────────
   deploy-site:
@@ -108,6 +111,10 @@ jobs:
         with:
           name: vlm-pdfs
           path: site/pdfs/
+      - name: Déplacer les PDFs individuels
+        run: |
+          mkdir -p site/pdfs/exercices
+          mv site/pdfs/individual/*.pdf site/pdfs/exercices/ 2>/dev/null || true
 
       - name: Déployer sur GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
