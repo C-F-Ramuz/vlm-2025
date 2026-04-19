@@ -387,7 +387,10 @@ function checkPassword() {
   const val = document.getElementById("passwordInput").value;
   if (val === MOT_DE_PASSE) {
     closeModal();
-    window.open(pendingUrl, "_blank");
+    const a = document.createElement("a");
+    a.href = pendingUrl;
+    a.target = "_blank";
+    a.click();
   } else {
     document.getElementById("errorMsg").style.display = "block";
     document.getElementById("passwordInput").value = "";
@@ -395,8 +398,10 @@ function checkPassword() {
   }
 }
 
-document.getElementById("modalOverlay").addEventListener("click", function(e) {
-  if (e.target === this) closeModal();
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("modalOverlay").addEventListener("click", function(e) {
+    if (e.target === this) closeModal();
+  });
 });
 
 // ── Event listeners ───────────────────────────────────────────
