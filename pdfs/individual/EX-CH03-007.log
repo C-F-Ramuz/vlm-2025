@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.19)  19 APR 2026 18:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.19)  19 APR 2026 18:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -36,9 +36,9 @@ Package: babel 2024/01/07 v24.1 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2023-12-19 v3.5r French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language14). Reported on input line 91.
+(babel)             (\language11). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language14). Reported on input line 92.
+(babel)             (\language11). Reported on input line 92.
 \FB@stdchar=\count197
 Package babel Info: Making : an active character on input line 420.
 Package babel Info: Making ; an active character on input line 421.
@@ -542,23 +542,23 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7611 strings out of 474222
- 122627 string characters out of 5748733
+ 7609 strings out of 474222
+ 122605 string characters out of 5748733
  1928975 words of memory out of 5000000
- 29756 multiletter control sequences out of 15000+600000
- 571603 words of font info for 58 fonts, out of 8000000 for 9000
+ 29755 multiletter control sequences out of 15000+600000
+ 568849 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,5n,93p,491b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf
 /fonts/type1/public/tex-gyre/qagb.pfb></usr/share/texmf/fonts/type1/public/tex-
-gyre/qagr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qagri.pfb>
-Output written on latex/output/individual/EX-CH03-007.pdf (1 page, 120793 bytes
-).
+gyre/qagr.pfb>
+Output written on latex/output/individual/EX-CH03-007.pdf (1 page, 98013 bytes)
+.
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 34 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
