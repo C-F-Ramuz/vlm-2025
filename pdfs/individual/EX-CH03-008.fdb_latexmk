@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1776608896.09961 "latex/individual/EX-CH03-008.tex" "latex/output/individual/EX-CH03-008.pdf" "EX-CH03-008" 1776608896.50145 1
+["pdflatex"] 1776609813.18419 "latex/individual/EX-CH03-008.tex" "latex/output/individual/EX-CH03-008.pdf" "EX-CH03-008" 1776609813.5537 1
   "/etc/texmf/web2c/texmf.cnf" 1776115481.10083 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -53,9 +53,9 @@
   "/usr/share/texlive/texmf-dist/tex/latex/zref/zref-base.sty" 1694723124 20785 f7d1133a287929598a897c93f8f4c44b ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776608802 8212598 70b75b8c769a7347e3e9e77e9d30ef2c ""
-  "latex/individual/EX-CH03-008.tex" 1776608891.77614 1376 a8fa2038f8df934ca7bc3807f7c7046d ""
-  "latex/output/individual/EX-CH03-008.aux" 1776608896.4654 181 dfc8c78176ad3f4a481521b5b1387ad4 "pdflatex"
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776609789 8212765 2a0fd2f8fb31153aba81aff6741e8b41 ""
+  "latex/individual/EX-CH03-008.tex" 1776609809.03882 1376 a8fa2038f8df934ca7bc3807f7c7046d ""
+  "latex/output/individual/EX-CH03-008.aux" 1776609813.51775 181 dfc8c78176ad3f4a481521b5b1387ad4 "pdflatex"
   (generated)
   "latex/output/individual/EX-CH03-008.aux"
   "latex/output/individual/EX-CH03-008.log"

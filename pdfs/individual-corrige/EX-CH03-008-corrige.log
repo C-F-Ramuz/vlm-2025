@@ -2,10 +2,8 @@ This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloade
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**latex/individual/EX-CH01-001.tex
-(./latex/individual/EX-CH01-001.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
+**\def\AVECSOLUTIONS{1}\input{latex/individual/EX-CH03-008.tex}
+(./latex/individual/EX-CH03-008.tex
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -437,8 +435,8 @@ Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks29
 \verbatim@in@stream=\read3
 )
-(latex/output/individual/EX-CH01-001.aux)
-\openout1 = `EX-CH01-001.aux'.
+(latex/output/individual-corrige/EX-CH03-008-corrige.aux)
+\openout1 = `EX-CH03-008-corrige.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
@@ -510,48 +508,24 @@ LaTeX Info: Redefining \up on input line 60.
 \MPnumerator=\count310
 \makeMPintoPDFobject=\count311
 \everyMPtoPDFconversion=\toks31
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
-
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Package mdframed Info: Not enough space on this page on input line 71.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
-dvips/cm-super/cm-super-t1.enc}] (latex/output/individual/EX-CH01-001.aux)
+) (latex/output/individual-corrige/EX-CH03-008-corrige.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7536 strings out of 474222
- 121160 string characters out of 5748733
- 1925975 words of memory out of 5000000
- 29689 multiletter control sequences out of 15000+600000
- 564938 words of font info for 57 fonts, out of 8000000 for 9000
+ 7462 strings out of 474222
+ 120056 string characters out of 5748733
+ 1922975 words of memory out of 5000000
+ 29639 multiletter control sequences out of 15000+600000
+ 559131 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,5n,93p,491b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on latex/output/individual/EX-CH01-001.pdf (1 page, 89181 bytes)
-.
+ 83i,1n,96p,520b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+No pages of output.
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 0 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
