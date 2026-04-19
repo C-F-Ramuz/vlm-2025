@@ -387,14 +387,8 @@ function closeModal() {
 function checkPassword() {
   const val = document.getElementById("passwordInput").value;
   if (val === MOT_DE_PASSE) {
-    closeModal();
-    const a = document.createElement("a");
-    a.href = pendingUrl;
-    a.target = "_blank";
-    a.rel = "noopener";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    console.log("pendingUrl:", pendingUrl);
+    console.log("location:", window.location.href);
   } else {
     document.getElementById("errorMsg").style.display = "block";
     document.getElementById("passwordInput").value = "";
