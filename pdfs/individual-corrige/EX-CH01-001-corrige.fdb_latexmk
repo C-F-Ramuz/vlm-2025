@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1776627340.20695 "latex/individual/EX-CH01-001.tex" "latex/output/individual-corrige/EX-CH01-001-corrige.pdf" "EX-CH01-001-corrige" 1776627340.7268 0
+["pdflatex"] 1776631677.07925 "latex/individual/EX-CH01-001.tex" "latex/output/individual-corrige/EX-CH01-001-corrige.pdf" "EX-CH01-001-corrige" 1776631677.52028 0
   "/etc/texmf/web2c/texmf.cnf" 1776115481.10083 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -19,11 +19,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf" 1703367853 67406 dceb79d013836a96b38471bc632b9fc3 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty" 1704662920 150008 7a05b0fdc0167c04e192003e780ab195 ""
@@ -82,10 +77,10 @@
   "/usr/share/texmf/tex/latex/tex-gyre/t1qag.fd" 1480098840 1642 7286e0350ef6ff0a6f0254f8254a3851 ""
   "/usr/share/texmf/tex/latex/tex-gyre/tgadventor.sty" 1480098840 2110 5bcede25cab30ce726910a38df51d2a7 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1776627193.50795 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776627226 8213738 e4af711df8ee90d5726b0cef062b6eb7 ""
-  "latex/individual/EX-CH01-001.tex" 1776627334.88604 2113 1b2b94d12f3ae12dfb2d5398fd836139 ""
-  "latex/output/individual-corrige/EX-CH01-001-corrige.aux" 1776627340.66493 226 5af9876d33104197000f4b7c9d5a9a5e "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1776631549.63842 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776631573 8213178 acd910afb697e680e5d7759fbbf6b10d ""
+  "latex/individual/EX-CH01-001.tex" 1776631670.94976 5800 99b5cb00a1fd33e5b7a236f249cdbf66 ""
+  "latex/output/individual-corrige/EX-CH01-001-corrige.aux" 1776631677.44808 226 5af9876d33104197000f4b7c9d5a9a5e "pdflatex"
   (generated)
   "latex/output/individual-corrige/EX-CH01-001-corrige.aux"
   "latex/output/individual-corrige/EX-CH01-001-corrige.log"
