@@ -198,7 +198,7 @@ def generate_latex_chapters(conn: sqlite3.Connection):
             ORDER BY e.id
         """, (chapitre,)).fetchall()
 
-        nom_latex = nom.replace('&', '\&')
+        nom_latex = nom.replace('&', r'\&')
         lines = [
             f"\\phantomsection",
             f"\\addcontentsline{{toc}}{{chapter}}{{{nom_latex}}}",

@@ -27,6 +27,7 @@ build:
 eleve: build
 	@echo "▶ Compilation PDF élève..."
 	@mkdir -p $(OUT_DIR)
+	$(LATEX) -C -jobname=vlm-eleve -outdir=$(OUT_DIR) $(TMPL_DIR)/main.tex 2>/dev/null || true
 	$(LATEX) -pdf \
 	  -jobname=vlm-eleve \
 	  -outdir=$(OUT_DIR) \
@@ -37,6 +38,7 @@ eleve: build
 corrige: build
 	@echo "▶ Compilation PDF corrigé..."
 	@mkdir -p $(OUT_DIR)
+	$(LATEX) -C -jobname=vlm-corrige -outdir=$(OUT_DIR) $(TMPL_DIR)/main.tex 2>/dev/null || true
 	$(LATEX) -pdf \
 	  -jobname=vlm-corrige \
 	  -outdir=$(OUT_DIR) \
