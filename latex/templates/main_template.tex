@@ -1,13 +1,10 @@
-% ============================================================
-%  VLM Math — Template principal
-%  Usage : \def\AVECSOLUTIONS{1}  pour la version corrigée
-% ============================================================
 \documentclass[12pt, a4paper]{book}
 
-% --- Packages ---
 \usepackage[french]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{geometry}
 \usepackage{enumitem}
@@ -19,61 +16,56 @@
 
 \geometry{margin=2.5cm}
 
-% --- Couleurs ---
 \definecolor{vlmblue}{RGB}{25, 90, 160}
 \definecolor{vlmgray}{RGB}{245, 245, 245}
 \definecolor{vlmgreen}{RGB}{0, 130, 80}
 
-% --- Environnement exercice ---
-\newmdenv[
-  backgroundcolor=vlmgray,
-  linecolor=vlmblue,
-  linewidth=2pt,
-  leftline=true, rightline=false, topline=false, bottomline=false,
-  innerleftmargin=12pt,
-  innerrightmargin=8pt,
-  innertopmargin=6pt,
-  innerbottommargin=6pt,
-]{exercicebox}
-
-\newenvironment{exercice}[2]{%
-  \begin{exercicebox}
-  \textbf{\textcolor{vlmblue}{Exercice #1}} \hfill \textit{#2}
-  \medskip\par
-}{%
-  \end{exercicebox}\medskip
-}
-
-% --- Environnement solution (conditionnel) ---
-\ifdefined\AVECSOLUTIONS
-  \newmdenv[
-    backgroundcolor=white,
-    linecolor=vlmgreen,
-    linewidth=2pt,
-    leftline=true, rightline=false, topline=false, bottomline=false,
-    innerleftmargin=12pt,
+% ── Titre de l'exercice dans un encadré ──
+\newcommand{\titrexercice}[2]{%
+  \begin{mdframed}[
+    backgroundcolor=vlmgray,
+    linecolor=vlmblue,
+    linewidth=1.5pt,
+    innerleftmargin=10pt,
+    innerrightmargin=10pt,
     innertopmargin=6pt,
     innerbottommargin=6pt,
-  ]{solutionbox}
+    skipabove=1em,
+    skipbelow=0.5em
+  ]
+  \textbf{\textcolor{vlmblue}{Exercice #1}}%
+  \ifx&#2&\else\hfill\textit{#2}\fi
+  \end{mdframed}
+}
 
+% ── Corps de l'exercice sans cadre ──
+\newenvironment{exercice}[2]{%
+  \titrexercice{#1}{#2}
+  \vspace{0.3em}
+}{%
+  \vspace{1em}
+}
+
+% ── Solution ──
+\ifdefined\AVECSOLUTIONS
   \newenvironment{solution}[1]{%
-    \begin{solutionbox}
-    \textbf{\textcolor{vlmgreen}{Solution #1}}\medskip\par
+    \vspace{0.3em}
+    \textbf{\textcolor{vlmgreen}{Solution #1}}
+    \vspace{0.3em}\par
   }{%
-    \end{solutionbox}\medskip
+    \vspace{1em}
   }
 \else
-  % Version élève : les solutions sont invisibles
   \newenvironment{solution}[1]{\comment}{\endcomment}
-  \usepackage{verbatim} % for \comment
+  \usepackage{verbatim}
 \fi
 
-% --- En-têtes ---
+% ── En-têtes ──
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\textcolor{vlmblue}{\textbf{VLM Mathématiques}}}
-\fancyhead[R]{\textit{\leftmark}}
-\fancyfoot[C]{\thepage}
+\fancyhead[LE]{\thepage\ — Vive les maths}
+\fancyhead[RO]{Vive les maths\ — \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
 
 % ============================================================
 \begin{document}
@@ -88,9 +80,6 @@
 \maketitle
 \tableofcontents
 
-% ============================================================
-% Inclure les chapitres (générés par le script Python)
-% ============================================================
 %%CHAPITRES%%
 
 \end{document}
