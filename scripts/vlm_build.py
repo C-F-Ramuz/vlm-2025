@@ -171,10 +171,11 @@ def generate_latex_chapters(conn: sqlite3.Connection):
         """, (chapitre,)).fetchall()
 
         lines = [
-            f"\\chapter*{{}}",
+            f"\\phantomsection",
             f"\\addcontentsline{{toc}}{{chapter}}{{{nom}}}",
             ""
         ]
+        
         for idx, (ex_id, titre, section, latex_ex, latex_sol) in enumerate(exercices, start=compteur_global):
             latex_ex_num = re.sub(
                 r'\\begin\{exercice\}\{[^}]*\}',
