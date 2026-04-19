@@ -387,8 +387,14 @@ function closeModal() {
 function checkPassword() {
   const val = document.getElementById("passwordInput").value;
   if (val === MOT_DE_PASSE) {
-    console.log("pendingUrl:", pendingUrl);
-    console.log("location:", window.location.href);
+    closeModal();
+    const a = document.createElement("a");
+    a.href = pendingUrl;
+    a.target = "_blank";
+    a.rel = "noopener";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   } else {
     document.getElementById("errorMsg").style.display = "block";
     document.getElementById("passwordInput").value = "";
@@ -397,6 +403,7 @@ function checkPassword() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+document.getElementById("btnAcceder").addEventListener("click", checkPassword);
   document.getElementById("modalOverlay").addEventListener("click", function(e) {
     if (e.target === this) closeModal();
   });
@@ -441,7 +448,7 @@ loadData();
     <div class="error-msg" id="errorMsg">Mot de passe incorrect.</div>
     <div class="modal-buttons">
       <button class="modal-btn secondary" onclick="closeModal()">Annuler</button>
-      <button class="modal-btn primary" onclick="checkPassword()">Accéder</button>
+      <button class="modal-btn primary" id="btnAcceder">Accéder</button>
     </div>
   </div>
 </div>
