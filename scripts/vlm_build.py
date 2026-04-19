@@ -234,10 +234,14 @@ def main():
             print("\n📝 Génération des chapitres LaTeX…")
             generate_latex_chapters(conn)
             
-            # Générer main.tex automatiquement
+# Générer main.tex automatiquement
+    chapitres_list = conn.execute(
+        "SELECT DISTINCT chapitre, chapitre_nom FROM exercices ORDER BY chapitre"
+    ).fetchall()
+    
     inputs = "\n".join([
         f"\\input{{latex/generated/ch{chapitre:02d}-{nom.lower().replace(' ','-').replace('è','e').replace('é','e').replace('ê','e').replace('à','a').replace('ô','o').replace('î','i').replace('ù','u')}}}"
-        for chapitre, nom in rows
+        for chapitre, nom in chapitres_list
     ])
     
     main_template = BASE_DIR / "latex" / "templates" / "main_template.tex"
@@ -246,7 +250,7 @@ def main():
     template = main_template.read_text(encoding="utf-8")
     template = template.replace("%%CHAPITRES%%", inputs)
     main_out.write_text(template, encoding="utf-8")
-    print(f"  📄 main.tex généré avec {len(rows)} chapitres")
+    print(f"  📄 main.tex généré avec {len(chapitres_list)} chapitres")
 
     print("\n📦 Export JSON…")
     export_json(conn)
