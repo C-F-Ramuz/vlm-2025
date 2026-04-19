@@ -181,9 +181,8 @@ def generate_latex_chapters(conn: sqlite3.Connection):
             lines.append(latex_sol)   # invisible côté élève grâce à \ifdefined\AVECSOLUTIONS
             lines.append("")
 
-       	 nom_fichier = nom.lower().replace(' ', '-')
-	nom_fichier = nom_fichier.replace('è','e').replace('é','e').replace('ê','e').replace('à','a').replace('â','a').replace('ô','o').replace('î','i').replace('ù','u')
-	out_file = LATEX_OUT_DIR / f"ch{chapitre:02d}-{nom_fichier}.tex"
+        nom_clean = nom.lower().replace(' ','-').replace('è','e').replace('é','e').replace('ê','e').replace('à','a').replace('ô','o').replace('î','i').replace('ù','u')
+        out_file = LATEX_OUT_DIR / f"ch{chapitre:02d}-{nom_clean}.tex"
         out_file.write_text("\n".join(lines), encoding="utf-8")
         print(f"  📄 Chapitre généré : {out_file.name} ({len(exercices)} exercices)")
 
