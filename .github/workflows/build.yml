@@ -66,7 +66,7 @@ jobs:
 
       - name: Compiler PDF corrigé
         run: make corrige
-       - name: Compiler les PDFs individuels (élève)
+      - name: Compiler les PDFs individuels (élève)
         run: |
           mkdir -p latex/output/individual
           for f in latex/individual/EX-*.tex; do
