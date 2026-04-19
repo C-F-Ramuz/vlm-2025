@@ -159,6 +159,8 @@ def generate_latex_chapters(conn: sqlite3.Connection):
     rows = conn.execute(
         "SELECT DISTINCT chapitre, chapitre_nom FROM exercices ORDER BY chapitre"
     ).fetchall()
+    
+    compteur_global = 1
 
     for chapitre, nom in rows:
         exercices = conn.execute("""
@@ -173,10 +175,21 @@ def generate_latex_chapters(conn: sqlite3.Connection):
             f"\\addcontentsline{{toc}}{{chapter}}{{{nom}}}",
             ""
         ]
-        for ex_id, titre, section, latex_ex, latex_sol in exercices:
-            lines.append(latex_ex)
-            lines.append(latex_sol)
+        for idx, (ex_id, titre, section, latex_ex, latex_sol) in enumerate(exercices, start=compteur_global):
+            latex_ex_num = re.sub(
+                r'\\begin\{exercice\}\{[^}]*\}',
+                f'\\\\begin{{exercice}}{{{idx}}}',
+                latex_ex
+            )
+            latex_sol_num = re.sub(
+                r'\\begin\{solution\}\{[^}]*\}',
+                f'\\\\begin{{solution}}{{{idx}}}',
+                latex_sol or ""
+            )
+            lines.append(latex_ex_num)
+            lines.append(latex_sol_num)
             lines.append("")
+        compteur_global += len(exercices)
             
         nom_clean = nom.lower().replace(' ','-').replace('è','e').replace('é','e').replace('ê','e').replace('à','a').replace('ô','o').replace('î','i').replace('ù','u')
         out_file = LATEX_OUT_DIR / f"ch{chapitre:02d}-{nom_clean}.tex"
