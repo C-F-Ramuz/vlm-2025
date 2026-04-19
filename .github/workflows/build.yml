@@ -1,0 +1,101 @@
+name: VLM Math — Build & Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  # ── Job 1 : Build de la base + export JSON ──────────────────
+  build-db:
+    name: Parse exercices & Build DB
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances Python
+        run: pip install pyyaml
+
+      - name: Parser les exercices et construire la base
+        run: python scripts/vlm_build.py --db-only
+
+      - name: Upload JSON pour le site
+        uses: actions/upload-artifact@v4
+        with:
+          name: exercices-json
+          path: site/exercices.json
+
+      - name: Upload DB SQLite
+        uses: actions/upload-artifact@v4
+        with:
+          name: vlm-database
+          path: vlm.db
+
+  # ── Job 2 : Compilation des PDFs ────────────────────────────
+  build-pdf:
+    name: Compiler les PDFs LaTeX
+    runs-on: ubuntu-latest
+    needs: build-db
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-full latexmk
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances Python
+        run: pip install pyyaml
+
+      - name: Générer les chapitres LaTeX
+        run: python scripts/vlm_build.py
+
+      - name: Compiler PDF élève
+        run: make eleve
+
+      - name: Compiler PDF corrigé
+        run: make corrige
+
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: vlm-pdfs
+          path: latex/output/*.pdf
+
+  # ── Job 3 : Déployer le site ─────────────────────────────────
+  deploy-site:
+    name: Déployer le site web
+    runs-on: ubuntu-latest
+    needs: [build-db, build-pdf]
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Récupérer le JSON
+        uses: actions/download-artifact@v4
+        with:
+          name: exercices-json
+          path: site/
+
+      - name: Récupérer les PDFs
+        uses: actions/download-artifact@v4
+        with:
+          name: vlm-pdfs
+          path: site/pdfs/
+
+      - name: Déployer sur GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
