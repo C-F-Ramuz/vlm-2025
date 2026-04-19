@@ -233,6 +233,20 @@ def main():
         if not args.db_only:
             print("\n📝 Génération des chapitres LaTeX…")
             generate_latex_chapters(conn)
+            
+            # Générer main.tex automatiquement
+    inputs = "\n".join([
+        f"\\input{{latex/generated/ch{chapitre:02d}-{nom.lower().replace(' ','-').replace('è','e').replace('é','e').replace('ê','e').replace('à','a').replace('ô','o').replace('î','i').replace('ù','u')}}}"
+        for chapitre, nom in rows
+    ])
+    
+    main_template = BASE_DIR / "latex" / "templates" / "main_template.tex"
+    main_out = BASE_DIR / "latex" / "templates" / "main.tex"
+    
+    template = main_template.read_text(encoding="utf-8")
+    template = template.replace("%%CHAPITRES%%", inputs)
+    main_out.write_text(template, encoding="utf-8")
+    print(f"  📄 main.tex généré avec {len(rows)} chapitres")
 
     print("\n📦 Export JSON…")
     export_json(conn)
