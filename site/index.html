@@ -387,8 +387,9 @@ function checkPassword() {
   const val = document.getElementById("passwordInput").value;
   if (val === MOT_DE_PASSE) {
     closeModal();
+    const base = window.location.href.replace(/\/[^\/]*$/, '/');
     const a = document.createElement("a");
-    a.href = pendingUrl;
+    a.href = new URL(pendingUrl, base).href;
     a.target = "_blank";
     a.click();
   } else {
