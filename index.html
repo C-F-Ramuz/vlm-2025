@@ -282,18 +282,25 @@ function buildUI() {
 
 // ── Logique de filtrage ───────────────────────────────────────
 function filterExercises() {
-  return allExercises.filter(e => {
-    if (activeFilters.chapitre && e.chapitre != activeFilters.chapitre) return false;
-    if (activeFilters.diff     && e.difficulte != activeFilters.diff)   return false;
-    if (activeFilters.tags.size > 0 && ![...activeFilters.tags].every(t => e.tags.includes(t))) return false;
-    if (activeFilters.search) {
-      const q = activeFilters.search.toLowerCase();
-      if (!e.titre.toLowerCase().includes(q) &&
-          !e.tags.some(t => t.toLowerCase().includes(q)) &&
-          !e.section?.toLowerCase().includes(q)) return false;
-    }
-    return true;
-  });
+  return allExercises
+    .filter(e => {
+      if (activeFilters.chapitre && e.chapitre_id != activeFilters.chapitre) return false;
+      if (activeFilters.diff     && e.difficulte != activeFilters.diff)       return false;
+      if (activeFilters.tags.size > 0 && ![...activeFilters.tags].every(t => e.tags.includes(t))) return false;
+      if (activeFilters.search) {
+        const q = activeFilters.search.toLowerCase();
+        if (!e.titre.toLowerCase().includes(q) &&
+            !e.tags.some(t => t.toLowerCase().includes(q))) return false;
+      }
+      return true;
+    })
+    .sort((a, b) => {
+      if ((a.chapitre_id || 0) !== (b.chapitre_id || 0))
+        return (a.chapitre_id || 0) - (b.chapitre_id || 0);
+      if (a.difficulte !== b.difficulte)
+        return a.difficulte - b.difficulte;
+      return a.id.localeCompare(b.id);
+    });
 }
 
 // ── Rendu ─────────────────────────────────────────────────────
