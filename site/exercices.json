@@ -1,22 +1,5 @@
 [
   {
-    "id": "EX-CH00-003",
-    "titre": "Décomposition en facteurs premiers",
-    "chapitre_id": 1,
-    "chapitre_nom": null,
-    "annee_scolaire": "9H",
-    "difficulte": 1,
-    "auteur": "Prénom Nom",
-    "modifie_le": "2026-04-20T12:44:22.689576",
-    "latex_exercice": "\\begin{exercice}{EX-CH00-003}{Décomposition en facteurs premiers}\n\n\\textbf{Théorème fondamental de l'arithmétique :} \\textit{« Chaque entier supérieur à 1 est premier ou un produit de nombres premiers ; la factorisation est unique, mis à part l'ordre des facteurs. »}\n\n\\medskip\nDécompose chaque nombre ci-dessous en un produit de facteurs premiers.\n\n\\medskip\n\\begin{tabular}{p{5cm} p{5cm} p{5cm}}\n\\textbf{A.} & \\textbf{B.} & \\textbf{C.} \\\\[6pt]\n$255  = \\dotfill$ & $1340 = \\dotfill$ & $720  = \\dotfill$ \\\\[8pt]\n$450  = \\dotfill$ & $140  = \\dotfill$ & $378  = \\dotfill$ \\\\[8pt]\n$84   = \\dotfill$ & $342  = \\dotfill$ & $270  = \\dotfill$ \\\\[8pt]\n$42   = \\dotfill$ & $280  = \\dotfill$ & $210  = \\dotfill$ \\\\[8pt]\n$600  = \\dotfill$ & $144  = \\dotfill$ & $117  = \\dotfill$ \\\\[8pt]\n$52   = \\dotfill$ & $1450 = \\dotfill$ & $480  = \\dotfill$ \\\\[8pt]\n\\end{tabular}\n\n\\end{exercice}",
-    "tags": [
-      "facteurs-premiers",
-      "factorisation",
-      "nombres-premiers"
-    ],
-    "objectifs": []
-  },
-  {
     "id": "EX-CH01-001",
     "titre": "Divisibilité",
     "chapitre_id": 1,
@@ -33,14 +16,31 @@
     "objectifs": []
   },
   {
-    "id": "EX-CH00-002",
+    "id": "EX-CH01-003",
+    "titre": "Décomposition en facteurs premiers",
+    "chapitre_id": 1,
+    "chapitre_nom": "Nombres entiers & divisibilité",
+    "annee_scolaire": "9H",
+    "difficulte": 1,
+    "auteur": "Prénom Nom",
+    "modifie_le": "2026-04-20T13:52:27.425407",
+    "latex_exercice": "\\begin{exercice}{EX-CH00-003}{Décomposition en facteurs premiers}\n\n\\textbf{Théorème fondamental de l'arithmétique :} \\textit{« Chaque entier supérieur à 1 est premier ou un produit de nombres premiers ; la factorisation est unique, mis à part l'ordre des facteurs. »}\n\n\\medskip\nDécompose chaque nombre ci-dessous en un produit de facteurs premiers.\n\n\\medskip\n\\begin{tabular}{p{5cm} p{5cm} p{5cm}}\n\\textbf{A.} & \\textbf{B.} & \\textbf{C.} \\\\[6pt]\n$255  = \\dotfill$ & $1340 = \\dotfill$ & $720  = \\dotfill$ \\\\[8pt]\n$450  = \\dotfill$ & $140  = \\dotfill$ & $378  = \\dotfill$ \\\\[8pt]\n$84   = \\dotfill$ & $342  = \\dotfill$ & $270  = \\dotfill$ \\\\[8pt]\n$42   = \\dotfill$ & $280  = \\dotfill$ & $210  = \\dotfill$ \\\\[8pt]\n$600  = \\dotfill$ & $144  = \\dotfill$ & $117  = \\dotfill$ \\\\[8pt]\n$52   = \\dotfill$ & $1450 = \\dotfill$ & $480  = \\dotfill$ \\\\[8pt]\n\\end{tabular}\n\n\\end{exercice}",
+    "tags": [
+      "facteurs-premiers",
+      "factorisation",
+      "nombres-premiers"
+    ],
+    "objectifs": []
+  },
+  {
+    "id": "EX-CH02-002",
     "titre": "Crible d'Ératosthène et formule d'Euler",
     "chapitre_id": 1,
-    "chapitre_nom": null,
+    "chapitre_nom": "Nombres entiers & divisibilité",
     "annee_scolaire": "9H",
     "difficulte": 2,
     "auteur": "Prénom Nom",
-    "modifie_le": "2026-04-20T12:44:21.455248",
+    "modifie_le": "2026-04-20T13:52:37.808492",
     "latex_exercice": "\\begin{exercice}{EX-CH00-001}{Crible d'Ératosthène et formule d'Euler}\n\n\\textbf{« Un nombre premier est un nombre entier supérieur à 1 qui ne possède que deux diviseurs : 1 et lui-même. »}\n\n\\medskip\nDes diverses méthodes utilisées pour fabriquer une table des nombres premiers, la plus intéressante est celle que l'on attribue à Ératosthène, astronome, mathématicien et géographe grec (III\\textsuperscript{e} siècle av.\\ J.-C.). Cette méthode, qui a reçu le nom de \\textit{crible d'Ératosthène}, consiste à écrire la suite des nombres entiers naturels à partir de 2 et à barrer dans cette suite les multiples de 2 à partir de 4, puis les multiples de 3 à partir de 6, ainsi de suite avec les multiples de 5, 7, 11, etc. Finalement, sont premiers les nombres qui restent non barrés. \\hfill{\\small Gérard Charrière, \\textit{L'algèbre mode d'emploi}}\n\n\\medskip\n\\textbf{A.} Applique la méthode du crible d'Ératosthène pour dresser la liste des nombres premiers inférieurs à 144.\n\n\\medskip\n\\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|}\n\\hline\n    & 2   & 3   & 4   & 5   & 6   & 7   & 8   & 9   & 10  & 11  & 12  \\\\\n\\hline\n13  & 14  & 15  & 16  & 17  & 18  & 19  & 20  & 21  & 22  & 23  & 24  \\\\\n\\hline\n25  & 26  & 27  & 28  & 29  & 30  & 31  & 32  & 33  & 34  & 35  & 36  \\\\\n\\hline\n37  & 38  & 39  & 40  & 41  & 42  & 43  & 44  & 45  & 46  & 47  & 48  \\\\\n\\hline\n49  & 50  & 51  & 52  & 53  & 54  & 55  & 56  & 57  & 58  & 59  & 60  \\\\\n\\hline\n61  & 62  & 63  & 64  & 65  & 66  & 67  & 68  & 69  & 70  & 71  & 72  \\\\\n\\hline\n73  & 74  & 75  & 76  & 77  & 78  & 79  & 80  & 81  & 82  & 83  & 84  \\\\\n\\hline\n85  & 86  & 87  & 88  & 89  & 90  & 91  & 92  & 93  & 94  & 95  & 96  \\\\\n\\hline\n97  & 98  & 99  & 100 & 101 & 102 & 103 & 104 & 105 & 106 & 107 & 108 \\\\\n\\hline\n109 & 110 & 111 & 112 & 113 & 114 & 115 & 116 & 117 & 118 & 119 & 120 \\\\\n\\hline\n121 & 122 & 123 & 124 & 125 & 126 & 127 & 128 & 129 & 130 & 131 & 132 \\\\\n\\hline\n133 & 134 & 135 & 136 & 137 & 138 & 139 & 140 & 141 & 142 & 143 & 144 \\\\\n\\hline\n\\end{tabular}\n\n\\medskip\nNombres premiers inférieurs à 144 : \\dotfill\n\n\\dotfill\n\n\\medskip\n\\textit{« Jusqu'à ce jour, les mathématiciens ont en vain tenté de découvrir un ordre dans la suite des nombres premiers et nous avons des raisons de croire que c'est un mystère que l'esprit ne pénétrera jamais. »}\n\n\\medskip\nEuler rencontre en 1772 une curieuse expression algébrique : $n^2 + n + 41$. En remplaçant $n$ par des nombres entiers de 0 à 39, il obtient une suite ininterrompue de 40 nombres premiers. Mais cette suite se brise lorsqu'il remplace $n$ par 40. En effet, $40^2 + 40 + 41 = 1681$ n'est pas un nombre premier. \\hfill{\\small Gérard Charrière, \\textit{L'algèbre mode d'emploi}}\n\n\\medskip\n\\textbf{B.} Retrouve la suite des 40 nombres premiers obtenus par Euler en remplaçant $n$ par les nombres entiers de 0 à 39 dans l'expression $n^2 + n + 41$.\n\n\\end{exercice}",
     "tags": [
       "divisibilite",

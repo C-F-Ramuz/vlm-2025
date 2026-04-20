@@ -124,9 +124,10 @@ def nettoyer_nom(nom):
 
 def generate_latex_chapters(conn: sqlite3.Connection):
     rows = conn.execute("""
-        SELECT DISTINCT chapitre_id, chapitre_nom
+        SELECT chapitre_id, MAX(chapitre_nom)
         FROM exercices
         WHERE chapitre_id IS NOT NULL
+        GROUP BY chapitre_id
         ORDER BY chapitre_id
     """).fetchall()
 

@@ -1,14 +1,66 @@
-% ---
-% id: EX-CH02-002
-% titre: Crible d'Ératosthène et formule d'Euler
-% chapitre_id: 1
-% chapitre_nom: Nombres entiers & divisibilité
-% annee_scolaire: 9H
-% difficulte: 2
-% tags: [nombres-premiers, divisibilite]
-% auteur: Prénom Nom
-% ---
+\documentclass[12pt, a4paper]{article}
 
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{verbatim}
+
+\geometry{margin=2.5cm}
+
+\definecolor{vlmblue}{RGB}{25, 90, 160}
+\definecolor{vlmgray}{RGB}{245, 245, 245}
+\definecolor{vlmgreen}{RGB}{0, 130, 80}
+
+% ── Titre de l'exercice dans un encadré ──
+\newcommand{\titrexercice}[2]{%
+  \begin{mdframed}[
+    backgroundcolor=vlmgray,
+    linecolor=vlmblue,
+    linewidth=1.5pt,
+    innerleftmargin=10pt,
+    innerrightmargin=10pt,
+    innertopmargin=6pt,
+    innerbottommargin=6pt,
+    skipabove=1em,
+    skipbelow=0.5em
+  ]
+  \textbf{\textcolor{vlmblue}{Exercice #1}}%
+  \ifx&#2&\else\hfill\textbf{#2}\fi
+  \end{mdframed}
+}
+
+% ── Corps de l'exercice sans cadre ──
+\newenvironment{exercice}[2]{%
+  \titrexercice{#1}{#2}
+  \vspace{0.3em}
+}{%
+  \vspace{1em}
+}
+
+% ── Solution ──
+\ifdefined\AVECSOLUTIONS
+  \newenvironment{solution}[1]{%
+    \vspace{0.3em}
+    \textbf{\textcolor{vlmgreen}{Solution #1}}
+    \vspace{0.3em}\par
+  }{%
+    \vspace{1em}
+  }
+\else
+  \newenvironment{solution}[1]{\comment}{\endcomment}
+\fi
+
+\pagestyle{empty}
+
+\begin{document}
 \begin{exercice}{EX-CH00-001}{Crible d'Ératosthène et formule d'Euler}
 
 \textbf{« Un nombre premier est un nombre entier supérieur à 1 qui ne possède que deux diviseurs : 1 et lui-même. »}
@@ -63,8 +115,6 @@ Euler rencontre en 1772 une curieuse expression algébrique : $n^2 + n + 41$. En
 \textbf{B.} Retrouve la suite des 40 nombres premiers obtenus par Euler en remplaçant $n$ par les nombres entiers de 0 à 39 dans l'expression $n^2 + n + 41$.
 
 \end{exercice}
-
-
 \begin{solution}{EX-CH00-001}
 
 \textbf{A.} Les nombres premiers inférieurs à 144 sont :
@@ -96,3 +146,4 @@ $n$ & $n^2+n+41$ & $n$ & $n^2+n+41$ & $n$ & $n^2+n+41$ & $n$ & $n^2+n+41$ \\
 Pour $n = 40$ : $40^2 + 40 + 41 = 1600 + 40 + 41 = 1681 = 41^2$, qui n'est pas premier.
 
 \end{solution}
+\end{document}
