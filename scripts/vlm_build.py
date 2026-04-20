@@ -291,6 +291,23 @@ def main():
     if not args.json_only:
         print("\n🔍 Parsing des exercices…")
         tex_files = sorted(EXERCICES_DIR.rglob("*.tex"))
+        
+        # Supprimer les exercices dont le fichier .tex n'existe plus
+        ids_fichiers = set()
+        for f in sorted(EXERCICES_DIR.rglob("*.tex")):
+            meta = parse_exercise_file(f)
+            if meta:
+                ids_fichiers.add(meta["id"])
+        
+        ids_db = set(row[0] for row in conn.execute("SELECT id FROM exercices").fetchall())
+        ids_supprimes = ids_db - ids_fichiers
+        for ex_id in ids_supprimes:
+            conn.execute("DELETE FROM tags WHERE exercice_id = ?", (ex_id,))
+            conn.execute("DELETE FROM objectifs WHERE exercice_id = ?", (ex_id,))
+            conn.execute("DELETE FROM exercices WHERE id = ?", (ex_id,))
+            print(f"  🗑️  Supprimé de la base : {ex_id}")
+        conn.commit()
+        
         for f in tex_files:
             meta = parse_exercise_file(f)
             if meta:
