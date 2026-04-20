@@ -106,6 +106,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 INPUT /usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/share/texmf/tex/latex/tex-gyre/t1qag.fd
 INPUT /usr/share/texmf/tex/latex/tex-gyre/t1qag.fd
 INPUT /usr/share/texmf/tex/latex/tex-gyre/t1qag.fd
