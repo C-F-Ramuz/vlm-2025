@@ -12,6 +12,7 @@
 \usepackage{xcolor}
 \usepackage{mdframed}
 \usepackage{hyperref}
+\usepackage{tabularx}
 \hypersetup{
   colorlinks=false,
   pdfborder={0 0 0}
@@ -53,8 +54,15 @@
 % ── Corps de l'exercice sans cadre ──
 \newenvironment{exercice}[2]{%
   \titrexercice{#1}{#2}
-  \vspace{0.3em}
+  \begin{list}{}{%
+    \setlength{\leftmargin}{0pt}
+    \setlength{\rightmargin}{0pt}
+    \setlength{\listparindent}{0pt}
+    \setlength{\itemindent}{0pt}
+    \setlength{\parsep}{0pt}
+  }\item[]\noindent\ignorespaces
 }{%
+  \end{list}
   \vspace{1em}
 }
 

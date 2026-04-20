@@ -1,0 +1,149 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{verbatim}
+\usepackage{tabularx}
+
+\geometry{margin=2.5cm}
+
+\definecolor{vlmblue}{RGB}{25, 90, 160}
+\definecolor{vlmgray}{RGB}{245, 245, 245}
+\definecolor{vlmgreen}{RGB}{0, 130, 80}
+
+% ── Titre de l'exercice dans un encadré ──
+\newcommand{\titrexercice}[2]{%
+  \begin{mdframed}[
+    backgroundcolor=vlmgray,
+    linecolor=black,
+    linewidth=1.5pt,
+    innerleftmargin=10pt,
+    innerrightmargin=10pt,
+    innertopmargin=6pt,
+    innerbottommargin=6pt,
+    skipabove=1em,
+    skipbelow=0.5em
+  ]
+  \textbf{Exercice #1}%
+  \ifx&#2&\else\hfill\textbf{#2}\fi
+  \end{mdframed}
+}
+
+% ── Corps de l'exercice sans cadre ──
+\newenvironment{exercice}[2]{%
+  \titrexercice{#1}{#2}
+  \begin{list}{}{%
+    \setlength{\leftmargin}{0pt}
+    \setlength{\rightmargin}{0pt}
+    \setlength{\listparindent}{0pt}
+    \setlength{\itemindent}{0pt}
+    \setlength{\parsep}{0pt}
+  }\item[]\noindent\ignorespaces
+}{%
+  \end{list}
+  \vspace{1em}
+}
+
+% ── Solution ──
+\ifdefined\AVECSOLUTIONS
+  \newenvironment{solution}[1]{%
+    \vspace{0.3em}
+    \textbf{\textcolor{vlmgreen}{Solution #1}}
+    \vspace{0.3em}\par
+  }{%
+    \vspace{1em}
+  }
+\else
+  \newenvironment{solution}[1]{\comment}{\endcomment}
+\fi
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{exercice}{EX-CH01-007}{PGDC et PPMC}
+
+Recherche le PGDC et le PPMC des nombres suivants :
+
+\bigskip
+\textbf{A.}
+
+\medskip
+\def\arraystretch{1.7}
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}XXXXp{4cm}>{\centering\arraybackslash}XXXXp{4cm}}
+\textbf{L.} & 34 & et & 26    && \textbf{M.} & 130 & et & 260 & \\
+\textbf{O.} & 25 & et & 45    && \textbf{A.} & 108 & et & 225 & \\
+\textbf{V.} & 16 & et & 18    && \textbf{T.} & 375 & et & 2070 & \\
+\textbf{E.} & 120 & et & 300  && \textbf{H.} & 12 & et & 8 & \\
+\end{tabularx}
+
+\vspace{20pt}
+\textbf{B.}
+
+\medskip
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}XXXXp{4cm}>{\centering\arraybackslash}XXXXXp{3cm}}
+\textbf{L.} & 382 & et & 675&& \textbf{M.} & 180&  et &378&& \\
+\textbf{I.} & 528 & et  & 204&& \textbf{A.} & 384 & et &132&& \\
+\textbf{E.} & 25 & et  & 16&& \textbf{T.} & 45& et &90&& \\
+\textbf{B.} & 54 & et & 36&& \textbf{H.} & 384,& 126& et &132& \\
+\end{tabularx}
+
+\end{exercice}
+\begin{solution}{EX-CH01-007}
+
+\textbf{Série 1}
+
+\medskip
+\begin{tabular}{ll}
+\textbf{L.} $34 = 2 \times 17$ \quad $26 = 2 \times 13$
+  & $\text{PGDC}(34,26) = 2$ \quad $\text{PPMC}(34,26) = 442$ \\[6pt]
+\textbf{M.} $130 = 2 \times 5 \times 13$ \quad $260 = 2^2 \times 5 \times 13$
+  & $\text{PGDC}(130,260) = 130$ \quad $\text{PPMC}(130,260) = 260$ \\[6pt]
+\textbf{O.} $25 = 5^2$ \quad $45 = 3^2 \times 5$
+  & $\text{PGDC}(25,45) = 5$ \quad $\text{PPMC}(25,45) = 225$ \\[6pt]
+\textbf{A.} $108 = 2^2 \times 3^3$ \quad $225 = 3^2 \times 5^2$
+  & $\text{PGDC}(108,225) = 9$ \quad $\text{PPMC}(108,225) = 2700$ \\[6pt]
+\textbf{V.} $16 = 2^4$ \quad $18 = 2 \times 3^2$
+  & $\text{PGDC}(16,18) = 2$ \quad $\text{PPMC}(16,18) = 144$ \\[6pt]
+\textbf{T.} $375 = 3 \times 5^3$ \quad $2070 = 2 \times 3^2 \times 5 \times 23$
+  & $\text{PGDC}(375,2070) = 15$ \quad $\text{PPMC}(375,2070) = 51750$ \\[6pt]
+\textbf{E.} $120 = 2^3 \times 3 \times 5$ \quad $300 = 2^2 \times 3 \times 5^2$
+  & $\text{PGDC}(120,300) = 60$ \quad $\text{PPMC}(120,300) = 600$ \\[6pt]
+\textbf{H.} $12 = 2^2 \times 3$ \quad $8 = 2^3$
+  & $\text{PGDC}(12,8) = 4$ \quad $\text{PPMC}(12,8) = 24$ \\[6pt]
+\end{tabular}
+
+\bigskip
+\textbf{Série 2}
+
+\medskip
+\begin{tabular}{ll}
+\textbf{L.} $382 = 2 \times 191$ \quad $675 = 3^3 \times 5^2$
+  & $\text{PGDC}(382,675) = 1$ \quad $\text{PPMC}(382,675) = 257850$ \\[6pt]
+\textbf{M.} $180 = 2^2 \times 3^2 \times 5$ \quad $378 = 2 \times 3^3 \times 7$
+  & $\text{PGDC}(180,378) = 18$ \quad $\text{PPMC}(180,378) = 3780$ \\[6pt]
+\textbf{I.} $528 = 2^4 \times 3 \times 11$ \quad $204 = 2^2 \times 3 \times 17$
+  & $\text{PGDC}(528,204) = 12$ \quad $\text{PPMC}(528,204) = 8976$ \\[6pt]
+\textbf{A.} $384 = 2^7 \times 3$ \quad $132 = 2^2 \times 3 \times 11$
+  & $\text{PGDC}(384,132) = 12$ \quad $\text{PPMC}(384,132) = 4224$ \\[6pt]
+\textbf{E.} $25 = 5^2$ \quad $16 = 2^4$
+  & $\text{PGDC}(25,16) = 1$ \quad $\text{PPMC}(25,16) = 400$ \\[6pt]
+\textbf{T.} $384 = 2^7 \times 3$ \quad $126 = 2 \times 3^2 \times 7$ \quad $132 = 2^2 \times 3 \times 11$
+  & $\text{PGDC}(384,126,132) = 6$ \quad $\text{PPMC}(384,126,132) = 21504$ \\[6pt]
+\textbf{B.} $54 = 2 \times 3^3$ \quad $36 = 2^2 \times 3^2$
+  & $\text{PGDC}(54,36) = 18$ \quad $\text{PPMC}(54,36) = 108$ \\[6pt]
+\textbf{H.} $45 = 3^2 \times 5$ \quad $90 = 2 \times 3^2 \times 5$
+  & $\text{PGDC}(45,90) = 45$ \quad $\text{PPMC}(45,90) = 90$ \\[6pt]
+\end{tabular}
+\def\arraystretch{1}
+
+\end{solution}
+\end{document}

@@ -1,0 +1,46 @@
+% ---
+% id: EX-CH01-005
+% titre: Nombres parfaits
+% chapitre_id: 1
+% chapitre_nom: Nombres entiers & divisibilité
+% annee_scolaire: 9H
+% difficulte: 2
+% tags: [divisibilite, diviseurs]
+% auteur: Bussy D.
+% ---
+
+\begin{exercice}{EX-CH01-005}{Nombres parfaits}
+
+\begin{mdframed}[backgroundcolor=vlmgray, innerleftmargin=10pt, innerrightmargin=10pt, innertopmargin=6pt, innerbottommargin=6pt, skipabove=-5pt, skipbelow=5pt]
+Un \textbf{nombre parfait} est un nombre naturel non nul qui est égal à la somme de ses diviseurs stricts (ses diviseurs sauf lui-même).
+\end{mdframed}
+
+
+\bigskip
+Parmi les nombres suivants, lesquels sont parfaits ?
+
+\medskip
+\begin{tabularx}{\linewidth}{*{5}{>{\centering\arraybackslash}X}}
+6 & 28 & 496 & 875 & 8128\\
+\end{tabularx}
+
+\end{exercice}
+
+\begin{solution}{EX-CH01-005}
+
+On détermine les diviseurs stricts de chaque nombre, puis on vérifie si leur somme est égale au nombre.
+
+\bigskip
+
+\begin{tabular}{llll}
+$D^*(6)$    & $= \{1, 2, 3\}$                                                    & $1+2+3 = 6$    & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
+$D^*(28)$   & $= \{1, 2, 4, 7, 14\}$                                             & $1+2+4+7+14 = 28$  & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
+$D^*(496)$  & $= \{1, 2, 4, 8, 16, 31, 62, 124, 248\}$                           & $1+2+4+8+16+31+62+124+248 = 496$  & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
+$D^*(875)$  & $= \{1, 5, 7, 25, 35, 125, 175\}$                                  & $1+5+7+25+35+125+175 = 373 \neq 875$ & $\Rightarrow$ non parfait $\times$ \\[6pt]
+$D^*(8128)$ & $= \{1, 2, 4, 8, 16, 32, 64, 127, 254, 508, 1016, 2032, 4064\}$   & $\sum = 8128$ & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
+\end{tabular}
+
+\bigskip
+Les nombres parfaits parmi ceux proposés sont donc : $\mathbf{6}$, $\mathbf{28}$, $\mathbf{496}$ et $\mathbf{8128}$.
+
+\end{solution}

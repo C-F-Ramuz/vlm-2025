@@ -1,0 +1,65 @@
+% ---
+% id: EX-CH01-006
+% titre: Nombres amicaux
+% chapitre_id: 1
+% chapitre_nom: Nombres entiers & divisibilité
+% annee_scolaire: 9H
+% difficulte: 3
+% tags: [divisibilite, diviseurs]
+% auteur: Bussy D.
+% ---
+
+\begin{exercice}{EX-CH01-006}{Nombres amicaux}
+
+\begin{mdframed}[backgroundcolor=vlmgray, innerleftmargin=10pt, innerrightmargin=10pt, innertopmargin=6pt, innerbottommargin=6pt, skipabove=-5pt, skipbelow=5pt]
+Deux nombres sont dits \textbf{amicaux} si chacun est la somme des diviseurs stricts de l'autre.
+\end{mdframed}
+
+\bigskip
+Vérifie les paires de nombres amicaux suivantes :
+
+\medskip
+\textbf{A.}
+
+\medskip
+La paire $(220 \;;\; 284)$ fut découverte par les Pythagoriciens. Elle fut considérée comme symbole de l'amitié.
+
+\vspace{20pt}
+\textbf{B.}
+
+\medskip
+La paire $(17296 \;;\; 18416)$ fut découverte par Fermat en 1636.
+
+\end{exercice}
+
+\begin{solution}{EX-CH01-006}
+
+\textbf{A.} Paire $(220 \;;\; 284)$
+
+\medskip
+\begin{tabular}{ll}
+$D^*(220)$ & $= \{1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110\}$ \\[4pt]
+           & $1+2+4+5+10+11+20+22+44+55+110 = 284$ \quad $\checkmark$ \\[8pt]
+$D^*(284)$ & $= \{1, 2, 4, 71, 142\}$ \\[4pt]
+           & $1+2+4+71+142 = 220$ \quad $\checkmark$
+\end{tabular}
+
+\medskip
+$\Rightarrow$ $220$ et $284$ sont bien amicaux.
+
+\bigskip
+
+\textbf{B.} Paire $(17296 \;;\; 18416)$
+
+\medskip
+\begin{tabular}{ll}
+$D^*(17296)$ & $= \{1, 2, 4, 8, 16, 23, 46, 47, 92, 94, 184, 188, 376, 752, 1081, 2162, 4324, 8648\}$ \\[4pt]
+             & $\sum D^*(17296) = 18416$ \quad $\checkmark$ \\[8pt]
+$D^*(18416)$ & $= \{1, 2, 4, 8, 16, 1151, 2302, 4604, 9208\}$ \\[4pt]
+             & $\sum D^*(18416) = 17296$ \quad $\checkmark$
+\end{tabular}
+
+\medskip
+$\Rightarrow$ $17296$ et $18416$ sont bien amicaux.
+
+\end{solution}

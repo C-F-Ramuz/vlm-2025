@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.7)  20 APR 2026 13:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.7)  20 APR 2026 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -557,82 +557,103 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
 \Hy@SectionHShift=\skip127
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen183
+\ar@mcellbox=\box107
+\extrarowheight=\dimen184
+\NC@list=\toks34
+\extratabsurround=\skip128
+\backup@length=\skip129
+\ar@cellbox=\box108
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 18.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
+\TX@col@width=\dimen185
+\TX@old@table=\dimen186
+\TX@old@col=\dimen187
+\TX@target=\dimen188
+\TX@delta=\dimen189
+\TX@cols=\count328
+\TX@ftn=\toks35
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 19.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count328
+\BKM@id=\count329
 ))
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip128
-\f@nch@offset@elh=\skip129
-\f@nch@offset@erh=\skip130
-\f@nch@offset@olh=\skip131
-\f@nch@offset@orh=\skip132
-\f@nch@offset@elf=\skip133
-\f@nch@offset@erf=\skip134
-\f@nch@offset@olf=\skip135
-\f@nch@offset@orf=\skip136
-\f@nch@height=\skip137
-\f@nch@footalignment=\skip138
-\f@nch@widthL=\skip139
-\f@nch@widthC=\skip140
-\f@nch@widthR=\skip141
-\@temptokenb=\toks34
+\f@nch@headwidth=\skip130
+\f@nch@offset@elh=\skip131
+\f@nch@offset@erh=\skip132
+\f@nch@offset@olh=\skip133
+\f@nch@offset@orh=\skip134
+\f@nch@offset@elf=\skip135
+\f@nch@offset@erf=\skip136
+\f@nch@offset@olf=\skip137
+\f@nch@offset@orf=\skip138
+\f@nch@height=\skip139
+\f@nch@footalignment=\skip140
+\f@nch@widthL=\skip141
+\f@nch@widthC=\skip142
+\f@nch@widthR=\skip143
+\@temptokenb=\toks36
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip142
-\cftbeforetoctitleskip=\skip143
-\cftaftertoctitleskip=\skip144
-\cftbeforepartskip=\skip145
-\cftpartnumwidth=\skip146
-\cftpartindent=\skip147
-\cftbeforechapskip=\skip148
-\cftchapindent=\skip149
-\cftchapnumwidth=\skip150
-\cftbeforesecskip=\skip151
-\cftsecindent=\skip152
-\cftsecnumwidth=\skip153
-\cftbeforesubsecskip=\skip154
-\cftsubsecindent=\skip155
-\cftsubsecnumwidth=\skip156
-\cftbeforesubsubsecskip=\skip157
-\cftsubsubsecindent=\skip158
-\cftsubsubsecnumwidth=\skip159
-\cftbeforeparaskip=\skip160
-\cftparaindent=\skip161
-\cftparanumwidth=\skip162
-\cftbeforesubparaskip=\skip163
-\cftsubparaindent=\skip164
-\cftsubparanumwidth=\skip165
-\cftbeforeloftitleskip=\skip166
-\cftafterloftitleskip=\skip167
-\cftbeforefigskip=\skip168
-\cftfigindent=\skip169
-\cftfignumwidth=\skip170
-\c@lofdepth=\count329
-\c@lotdepth=\count330
-\cftbeforelottitleskip=\skip171
-\cftafterlottitleskip=\skip172
-\cftbeforetabskip=\skip173
-\cfttabindent=\skip174
-\cfttabnumwidth=\skip175
+\cftparskip=\skip144
+\cftbeforetoctitleskip=\skip145
+\cftaftertoctitleskip=\skip146
+\cftbeforepartskip=\skip147
+\cftpartnumwidth=\skip148
+\cftpartindent=\skip149
+\cftbeforechapskip=\skip150
+\cftchapindent=\skip151
+\cftchapnumwidth=\skip152
+\cftbeforesecskip=\skip153
+\cftsecindent=\skip154
+\cftsecnumwidth=\skip155
+\cftbeforesubsecskip=\skip156
+\cftsubsecindent=\skip157
+\cftsubsecnumwidth=\skip158
+\cftbeforesubsubsecskip=\skip159
+\cftsubsubsecindent=\skip160
+\cftsubsubsecnumwidth=\skip161
+\cftbeforeparaskip=\skip162
+\cftparaindent=\skip163
+\cftparanumwidth=\skip164
+\cftbeforesubparaskip=\skip165
+\cftsubparaindent=\skip166
+\cftsubparanumwidth=\skip167
+\cftbeforeloftitleskip=\skip168
+\cftafterloftitleskip=\skip169
+\cftbeforefigskip=\skip170
+\cftfigindent=\skip171
+\cftfignumwidth=\skip172
+\c@lofdepth=\count330
+\c@lotdepth=\count331
+\cftbeforelottitleskip=\skip173
+\cftafterlottitleskip=\skip174
+\cftbeforetabskip=\skip175
+\cfttabindent=\skip176
+\cfttabnumwidth=\skip177
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks35
-\verbatim@line=\toks36
+\every@verbatim=\toks37
+\verbatim@line=\toks38
 \verbatim@in@stream=\read3
 )
-LaTeX Font Info:    Trying to load font information for T1+qag on input line 83
+LaTeX Font Info:    Trying to load font information for T1+qag on input line 91
 .
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tex-gyre/t1qag.fd
@@ -644,32 +665,32 @@ Package babel Info: 'french' activates 'french' shorthands.
 )
 \openout1 = `vlm-eleve.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Info: Redefining \degres on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Info: Redefining \degres on input line 91.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 83.
+(french.ldf)             reported on input line 91.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 83.
-LaTeX Info: Redefining \up on input line 83.
+(french.ldf)             reported on input line 91.
+LaTeX Info: Redefining \up on input line 91.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -707,26 +728,26 @@ LaTeX Info: Redefining \up on input line 83.
 
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
-\scratchdimen=\dimen183
-\scratchbox=\box107
-\nofMPsegments=\count332
-\nofMParguments=\count333
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count334
-\MPscratchDim=\dimen184
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count332
+\scratchdimen=\dimen190
+\scratchbox=\box109
+\nofMPsegments=\count333
+\nofMParguments=\count334
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count335
+\MPscratchDim=\dimen191
+\MPnumerator=\count336
+\makeMPintoPDFobject=\count337
+\everyMPtoPDFconversion=\toks40
 )
-Package hyperref Info: Link coloring OFF on input line 83.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
-
+Package hyperref Info: Link coloring OFF on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 101
+.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 101
+.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -749,30 +770,14 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 5.
 Package mdframed Info: Not enough space on this page on input line 5.
-
-Overfull \hbox (33.54765pt too wide) in paragraph at lines 14--32
-[][]
- []
-
-
-Overfull \hbox (33.54765pt too wide) in paragraph at lines 38--56
-[][]
- []
-
-
-Overfull \hbox (33.54765pt too wide) in paragraph at lines 60--78
-[][]
- []
-
-
-Overfull \hbox (33.54765pt too wide) in paragraph at lines 82--98
-[][] 
- []
-
-Package mdframed Info: mdframed works in twoside mode on input line 106.
+Package mdframed Info: mdframed works in twoside mode on input line 169.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 106.
+(mdframed)              on input line 169.
+Package mdframed Info: mdframed works in twoside mode on input line 171.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 171.
 
 
 
@@ -785,14 +790,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [3
 
 ]
-Overfull \hbox (25.17204pt too wide) in paragraph at lines 114--123
-[][] 
- []
-
-Package mdframed Info: mdframed works in twoside mode on input line 139.
+Package mdframed Info: mdframed works in twoside mode on input line 208.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 139.
+(mdframed)              on input line 208.
+Package mdframed Info: mdframed works in twoside mode on input line 268.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 268.
+Package mdframed Info: mdframed works in twoside mode on input line 270.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 270.
 
 
 
@@ -802,7 +811,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4])
+[4]
+Package mdframed Info: mdframed works in twoside mode on input line 365.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 365.
+Package mdframed Info: mdframed works in twoside mode on input line 367.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 367.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -811,30 +829,179 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5] (latex/output/vlm-eleve.aux)
+[5]
+Package mdframed Info: mdframed works in twoside mode on input line 400.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 400.
+Package mdframed Info: Not enough space on this page on input line 400.
+
+Overfull \hbox (0.70723pt too wide) in paragraph at lines 414--414
+ []|\T1/qag/b/n/12 M.| 
+ []
+
+
+Overfull \hbox (6.49118pt too wide) in paragraph at lines 414--414
+[]|\T1/qag/m/n/12 130| 
+ []
+
+
+Overfull \hbox (6.49118pt too wide) in paragraph at lines 414--414
+[]|\T1/qag/m/n/12 260| 
+ []
+
+
+Overfull \hbox (6.49118pt too wide) in paragraph at lines 414--414
+[]|\T1/qag/m/n/12 108| 
+ []
+
+
+Overfull \hbox (6.49118pt too wide) in paragraph at lines 414--414
+[]|\T1/qag/m/n/12 225| 
+ []
+
+
+Overfull \hbox (6.49118pt too wide) in paragraph at lines 414--414
+[]|\T1/qag/m/n/12 375| 
+ []
+
+
+Overfull \hbox (13.13916pt too wide) in paragraph at lines 414--414
+[]|\T1/qag/m/n/12 2070| 
+ []
+
+
+Overfull \hbox (6.49118pt too wide) in paragraph at lines 414--414
+[]|\T1/qag/m/n/12 120| 
+ []
+
+
+Overfull \hbox (6.49118pt too wide) in paragraph at lines 414--414
+[]|\T1/qag/m/n/12 300| 
+ []
+
+
+Overfull \hbox (6.15784pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 382| 
+ []
+
+
+Overfull \hbox (6.15784pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 675| 
+ []
+
+
+Overfull \hbox (6.15784pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 180| 
+ []
+
+
+Overfull \hbox (6.15784pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 378| 
+ []
+
+
+Overfull \hbox (6.15784pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 528| 
+ []
+
+
+Overfull \hbox (6.15784pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 204| 
+ []
+
+
+Overfull \hbox (6.15784pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 384| 
+ []
+
+
+Overfull \hbox (6.15784pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 132| 
+ []
+
+
+Overfull \hbox (9.48184pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 384,| 
+ []
+
+
+Overfull \hbox (6.15784pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 126| 
+ []
+
+
+Overfull \hbox (6.15784pt too wide) in paragraph at lines 425--425
+[]|\T1/qag/m/n/12 132| 
+ []
+
+Package mdframed Info: mdframed works in twoside mode on input line 478.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 478.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+Package mdframed Info: mdframed works in twoside mode on input line 770.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 770.
+Package mdframed Info: mdframed works in twoside mode on input line 772.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 772.
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8] (latex/output/vlm-eleve.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14964 strings out of 473190
- 241389 string characters out of 5715801
- 715938 words of memory out of 5000000
- 38009 multiletter control sequences out of 15000+600000
- 594063 words of font info for 76 fonts, out of 8000000 for 9000
+ 15110 strings out of 473190
+ 243605 string characters out of 5715801
+ 749475 words of memory out of 5000000
+ 38145 multiletter control sequences out of 15000+600000
+ 591954 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,12n,93p,775b,493s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
-r/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagb.pfb></usr/loca
-l/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagr.pfb></usr/local/texl
-ive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagri.pfb>
-Output written on latex/output/vlm-eleve.pdf (5 pages, 146117 bytes).
+ 79i,12n,93p,783b,652s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
+ocal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagb.pfb></usr/local/texl
+ive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagr.pfb></usr/local/texlive/20
+25/texmf-dist/fonts/type1/public/tex-gyre/qagri.pfb>
+Output written on latex/output/vlm-eleve.pdf (8 pages, 180917 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 

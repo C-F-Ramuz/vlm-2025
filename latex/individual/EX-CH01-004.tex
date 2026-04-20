@@ -1,0 +1,131 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{verbatim}
+\usepackage{tabularx}
+
+\geometry{margin=2.5cm}
+
+\definecolor{vlmblue}{RGB}{25, 90, 160}
+\definecolor{vlmgray}{RGB}{245, 245, 245}
+\definecolor{vlmgreen}{RGB}{0, 130, 80}
+
+% ── Titre de l'exercice dans un encadré ──
+\newcommand{\titrexercice}[2]{%
+  \begin{mdframed}[
+    backgroundcolor=vlmgray,
+    linecolor=black,
+    linewidth=1.5pt,
+    innerleftmargin=10pt,
+    innerrightmargin=10pt,
+    innertopmargin=6pt,
+    innerbottommargin=6pt,
+    skipabove=1em,
+    skipbelow=0.5em
+  ]
+  \textbf{Exercice #1}%
+  \ifx&#2&\else\hfill\textbf{#2}\fi
+  \end{mdframed}
+}
+
+% ── Corps de l'exercice sans cadre ──
+\newenvironment{exercice}[2]{%
+  \titrexercice{#1}{#2}
+  \begin{list}{}{%
+    \setlength{\leftmargin}{0pt}
+    \setlength{\rightmargin}{0pt}
+    \setlength{\listparindent}{0pt}
+    \setlength{\itemindent}{0pt}
+    \setlength{\parsep}{0pt}
+  }\item[]\noindent\ignorespaces
+}{%
+  \end{list}
+  \vspace{1em}
+}
+
+% ── Solution ──
+\ifdefined\AVECSOLUTIONS
+  \newenvironment{solution}[1]{%
+    \vspace{0.3em}
+    \textbf{\textcolor{vlmgreen}{Solution #1}}
+    \vspace{0.3em}\par
+  }{%
+    \vspace{1em}
+  }
+\else
+  \newenvironment{solution}[1]{\comment}{\endcomment}
+\fi
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{exercice}{EX-CH01-004}{Diviseurs}
+
+Détermine l'ensemble des diviseurs des nombres suivants :
+\bigskip
+
+\textbf{A.}
+
+\medskip
+\begin{tabularx}{\linewidth}{*{10}{>{\centering\arraybackslash}X}}
+34 & 46 & 57  & 100 & 120 & 150 & 215 & 250  & 430   & 1250 \\
+\end{tabularx}
+
+\vspace{20pt}
+
+\textbf{B.}
+
+\medskip
+\begin{tabularx}{\linewidth}{*{10}{>{\centering\arraybackslash}X}}
+130 & 134 & 246 & 300 & 320 & 460 & 620 & 850  & 750 & 1840\\
+\end{tabularx}
+
+\end{exercice}
+\begin{solution}{EX-CH01-004}
+
+\textbf{Série 1}
+
+\medskip
+\begin{tabular}{ll}
+$D(34)$   & $= \{1, 2, 17, 34\}$ \\[4pt]
+$D(46)$   & $= \{1, 2, 23, 46\}$ \\[4pt]
+$D(120)$  & $= \{1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120\}$ \\[4pt]
+$D(150)$  & $= \{1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 150\}$ \\[4pt]
+$D(215)$  & $= \{1, 5, 43, 215\}$ \\[4pt]
+$D(250)$  & $= \{1, 2, 5, 10, 25, 50, 125, 250\}$ \\[4pt]
+$D(100)$  & $= \{1, 2, 4, 5, 10, 20, 25, 50, 100\}$ \\[4pt]
+$D(57)$   & $= \{1, 3, 19, 57\}$ \\[4pt]
+$D(1250)$ & $= \{1, 2, 5, 10, 25, 50, 125, 250, 625, 1250\}$ \\[4pt]
+$D(430)$  & $= \{1, 2, 5, 10, 43, 86, 215, 430\}$ \\
+\end{tabular}
+
+\bigskip
+
+\textbf{Série 2}
+
+\medskip
+\begin{tabular}{ll}
+$D(134)$  & $= \{1, 2, 67, 134\}$ \\[4pt]
+$D(246)$  & $= \{1, 2, 3, 6, 41, 82, 123, 246\}$ \\[4pt]
+$D(320)$  & $= \{1, 2, 4, 5, 8, 10, 16, 20, 32, 40, 64, 80, 160, 320\}$ \\[4pt]
+$D(460)$  & $= \{1, 2, 4, 5, 10, 20, 23, 46, 92, 115, 230, 460\}$ \\[4pt]
+$D(620)$  & $= \{1, 2, 4, 5, 10, 20, 31, 62, 124, 155, 310, 620\}$ \\[4pt]
+$D(850)$  & $= \{1, 2, 5, 10, 17, 25, 34, 50, 85, 170, 425, 850\}$ \\[4pt]
+$D(300)$  & $= \{1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 25, 30, 50, 60, 75, 100, 150, 300\}$ \\[4pt]
+$D(750)$  & $= \{1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 125, 150, 250, 375, 750\}$ \\[4pt]
+$D(1840)$ & $= \{1, 2, 4, 5, 8, 10, 16, 20, 23, 40, 46, 80, 92, 115, 184, 230, 368, 460, 920, 1840\}$ \\[4pt]
+$D(130)$  & $= \{1, 2, 5, 10, 13, 26, 65, 130\}$ \\
+\end{tabular}
+
+\end{solution}
+\end{document}
