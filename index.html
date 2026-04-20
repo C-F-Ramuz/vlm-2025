@@ -261,13 +261,14 @@ async function loadData() {
 // ── Construction des filtres dynamiques ───────────────────────
 function buildUI() {
   // Chapitres
-  const chapitres = [...new Map(allExercises.map(e => [e.chapitre, e.chapitre_nom])).entries()]
+  const chapitres = [...new Map(allExercises.map(e => [e.chapitre_id, e.chapitre_nom])).entries()]
+    .filter(([num, nom]) => num !== null)
     .sort((a, b) => a[0] - b[0]);
   const chapContainer = document.getElementById("chapitreFilters");
   chapContainer.innerHTML = `<button class="filter-btn active" data-filter="chapitre" data-value="">Tous</button>`;
   chapitres.forEach(([num, nom]) => {
-    const count = allExercises.filter(e => e.chapitre === num).length;
-    chapContainer.innerHTML += `<button class="filter-btn" data-filter="chapitre" data-value="${num}">${num}. ${nom}<span class="count">${count}</span></button>`;
+    const count = allExercises.filter(e => e.chapitre_id === num).length;
+    chapContainer.innerHTML += `<button class="filter-btn" data-filter="chapitre" data-value="${num}">${nom || 'Sans chapitre'}<span class="count">${count}</span></button>`;
   });
 
   // Tags
@@ -314,13 +315,13 @@ function render() {
         <span class="ex-id">${e.id}</span>
         <span class="ex-title">${e.titre}</span>
         <div class="ex-meta">
-          <span class="badge badge-chapitre">${e.chapitre_nom || 'Ch. ' + (e.chapitre_id || '')}</span>
-          <span class="diff-dot" title="Difficulté ${e.difficulte}/3" style="background:${diffColor(e.difficulte)}"></span>
+         <span class="badge badge-chapitre">${e.chapitre_nom || 'Sans chapitre'}</span>
+         <span class="diff-dot" title="Difficulté ${e.difficulte}/3" style="background:${diffColor(e.difficulte)}"></span>
         </div>
       </div>
       <div class="ex-footer">
         ${e.tags.map(t => `<span class="ex-tag">${t}</span>`).join("")}
-        <span style="margin-left:auto;font-size:.75rem;color:var(--muted)">${e.auteur || ''} ${e.annee_scolaire ? '· ' + e.annee_scolaire : ''}</span>
+        <span style="margin-left:auto;font-size:.75rem;color:var(--muted)">${e.auteur || ''}</span>
       </div>
       <div class="ex-body">
         <div style="font-size:.82rem;color:var(--muted);margin-bottom:.5rem">
