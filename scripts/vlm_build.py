@@ -137,7 +137,7 @@ def generate_latex_chapters(conn: sqlite3.Connection):
             SELECT id, titre, latex_exercice, latex_solution
             FROM exercices
             WHERE chapitre_id = ?
-            ORDER BY id
+            ORDER BY difficulte, id
         """, (chapitre_id,)).fetchall()
 
         nom_latex = (chapitre_nom or "").replace('&', r'\&')
@@ -200,7 +200,7 @@ def export_json(conn: sqlite3.Connection):
         SELECT id, titre, chapitre_id, chapitre_nom,
                annee_scolaire, difficulte, auteur, modifie_le, latex_exercice
         FROM exercices
-        ORDER BY chapitre_id, id
+        ORDER BY chapitre_id, difficulte, id
     """).fetchall()
 
     cols = ["id", "titre", "chapitre_id", "chapitre_nom",

@@ -1,0 +1,96 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{verbatim}
+
+\geometry{margin=2.5cm}
+
+\definecolor{vlmblue}{RGB}{25, 90, 160}
+\definecolor{vlmgray}{RGB}{245, 245, 245}
+\definecolor{vlmgreen}{RGB}{0, 130, 80}
+
+% ── Titre de l'exercice dans un encadré ──
+\newcommand{\titrexercice}[2]{%
+  \begin{mdframed}[
+    backgroundcolor=vlmgray,
+    linecolor=vlmblue,
+    linewidth=1.5pt,
+    innerleftmargin=10pt,
+    innerrightmargin=10pt,
+    innertopmargin=6pt,
+    innerbottommargin=6pt,
+    skipabove=1em,
+    skipbelow=0.5em
+  ]
+  \textbf{\textcolor{vlmblue}{Exercice #1}}%
+  \ifx&#2&\else\hfill\textbf{#2}\fi
+  \end{mdframed}
+}
+
+% ── Corps de l'exercice sans cadre ──
+\newenvironment{exercice}[2]{%
+  \titrexercice{#1}{#2}
+  \vspace{0.3em}
+}{%
+  \vspace{1em}
+}
+
+% ── Solution ──
+\ifdefined\AVECSOLUTIONS
+  \newenvironment{solution}[1]{%
+    \vspace{0.3em}
+    \textbf{\textcolor{vlmgreen}{Solution #1}}
+    \vspace{0.3em}\par
+  }{%
+    \vspace{1em}
+  }
+\else
+  \newenvironment{solution}[1]{\comment}{\endcomment}
+\fi
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{exercice}{EX-CH00-003}{Décomposition en facteurs premiers}
+
+\textbf{Théorème fondamental de l'arithmétique :} \textit{« Chaque entier supérieur à 1 est premier ou un produit de nombres premiers ; la factorisation est unique, mis à part l'ordre des facteurs. »}
+
+\medskip
+Décompose chaque nombre ci-dessous en un produit de facteurs premiers.
+
+\medskip
+\begin{tabular}{p{5cm} p{5cm} p{5cm}}
+\textbf{A.} & \textbf{B.} & \textbf{C.} \\[6pt]
+$255  = \dotfill$ & $1340 = \dotfill$ & $720  = \dotfill$ \\[8pt]
+$450  = \dotfill$ & $140  = \dotfill$ & $378  = \dotfill$ \\[8pt]
+$84   = \dotfill$ & $342  = \dotfill$ & $270  = \dotfill$ \\[8pt]
+$42   = \dotfill$ & $280  = \dotfill$ & $210  = \dotfill$ \\[8pt]
+$600  = \dotfill$ & $144  = \dotfill$ & $117  = \dotfill$ \\[8pt]
+$52   = \dotfill$ & $1450 = \dotfill$ & $480  = \dotfill$ \\[8pt]
+\end{tabular}
+
+\end{exercice}
+\begin{solution}{EX-CH00-003}
+
+\begin{tabular}{p{5cm} p{5cm} p{5cm}}
+\textbf{A.} & \textbf{B.} & \textbf{C.} \\[6pt]
+$255  = 3 \times 5 \times 17$          & $1340 = 2^2 \times 5 \times 67$  & $720  = 2^4 \times 3^2 \times 5$   \\[8pt]
+$450  = 2 \times 3^2 \times 5^2$       & $140  = 2^2 \times 5 \times 7$   & $378  = 2 \times 3^3 \times 7$     \\[8pt]
+$84   = 2^2 \times 3 \times 7$         & $342  = 2 \times 3^2 \times 19$  & $270  = 2 \times 3^3 \times 5$     \\[8pt]
+$42   = 2 \times 3 \times 7$           & $280  = 2^3 \times 5 \times 7$   & $210  = 2 \times 3 \times 5 \times 7$ \\[8pt]
+$600  = 2^3 \times 3 \times 5^2$       & $144  = 2^4 \times 3^2$          & $117  = 3^2 \times 13$             \\[8pt]
+$52   = 2^2 \times 13$                 & $1450 = 2 \times 5^2 \times 29$  & $480  = 2^5 \times 3 \times 5$     \\[8pt]
+\end{tabular}
+
+\end{solution}
+\end{document}
