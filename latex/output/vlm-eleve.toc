@@ -1,3 +1,4 @@
 \babel@toc {french}{}\relax 
 \contentsline {chapter}{Nombres entiers \& divisibilité}{3}{section*.1}%
-\contentsline {chapter}{Fractions \& pourcentages}{11}{section*.2}%
+\contentsline {chapter}{Nombres relatifs}{11}{section*.2}%
+\contentsline {chapter}{Fractions \& pourcentages}{13}{section*.3}%

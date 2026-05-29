@@ -10,10 +10,10 @@ Règles :
 ## MSN 31 — Nombres & Opérations
 
 **Ch01 · Entiers & divisibilité**
-`facteurs-premiers` `decomposition` `nombres-premiers` `diviseurs` `multiples` `pgdc` `ppmc` `divisibilite`
+`addition` `soustraction` `multiplication` `division` `facteurs-premiers` `decomposition` `nombres-premiers` `diviseurs` `multiples` `pgdc` `ppmc` `divisibilite`
 
 **Ch02 · Entiers relatifs**
-`entiers-relatifs` `valeur-absolue` `oppose` `droite-graduee`
+`nombres-relatifs` `valeur-absolue` `oppose` `droite-graduee`
 
 **Ch03 · Fractions & pourcentages**
 `fractions` `simplification` `operations-fractions` `nombres-decimaux` `pourcentages` `taux` `augmentation` `diminution` `comparaison`

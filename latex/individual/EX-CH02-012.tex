@@ -68,57 +68,33 @@
 \pagestyle{empty}
 
 \begin{document}
-\begin{exercice}{EX-CH01-006}{Nombres amicaux}
-
-\begin{mdframed}[backgroundcolor=vlmgray, innerleftmargin=10pt, innerrightmargin=10pt, innertopmargin=6pt, innerbottommargin=6pt, skipabove=-5pt, skipbelow=5pt]
-Deux nombres sont dits \textbf{amicaux} si chacun est la somme des diviseurs stricts de l'autre.
-\end{mdframed}
-
+\begin{exercice}{EX-CH02-012}{Multiplications et divisions de nombres relatifs}
+{\small
 \bigskip
-Vérifie les paires de nombres amicaux suivantes :
-
-\medskip
-\textbf{A.}
-
-\medskip
-La paire $(220 \;;\; 284)$ fut découverte par les Pythagoriciens. Elle fut considérée comme symbole de l'amitié.
-
-\vspace{20pt}
-\textbf{B.}
-
-\medskip
-La paire $(17296 \;;\; 18416)$ fut découverte par Fermat en 1636.
-
+\def\arraystretch{1.7}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{A.} & \textbf{B.} & \textbf{C.} & \textbf{D.} \\
+$(+5)\cdot(-3)= \dotfill$    & $(-45):(+5)= \dotfill$  & $(+56):(-7)= \dotfill$      & $(+27):(+9)= \dotfill$      \\
+$(+6)\cdot(+12)= \dotfill$   & $(-14):(-7)= \dotfill$  & $(-10)\cdot(-11)= \dotfill$ & $(+4)\cdot(-8)= \dotfill$   \\
+$(+8)\cdot(+11)= \dotfill$   & $(+90):(-10)= \dotfill$ & $(+9)\cdot(-9)= \dotfill$   & $(-63):(+7)= \dotfill$      \\
+$(+42):(-7)= \dotfill$       & $(-72):(+12)= \dotfill$ & $(-12):(-4)= \dotfill$      & $(+11)\cdot(-11)= \dotfill$ \\
+$(+96):(-12)= \dotfill$      & $(+6)\cdot(-4)= \dotfill$ & $(+25):(-5)= \dotfill$    & $(-49):(-7)= \dotfill$      \\
+$(+48):(-8)= \dotfill$       & $(+28):(+7)= \dotfill$  & $(-5)\cdot(-6)= \dotfill$   & $(+10):(-10)= \dotfill$     \\
+\end{tabularx}
+}
 \end{exercice}
-\begin{solution}{EX-CH01-006}
+\begin{solution}{EX-CH02-012}
 
-\textbf{A.} Paire $(220 \;;\; 284)$
-
-\medskip
-\begin{tabular}{ll}
-$D^*(220)$ & $= \{1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110\}$ \\[4pt]
-           & $1+2+4+5+10+11+20+22+44+55+110 = 284$ \quad $\checkmark$ \\[8pt]
-$D^*(284)$ & $= \{1, 2, 4, 71, 142\}$ \\[4pt]
-           & $1+2+4+71+142 = 220$ \quad $\checkmark$
-\end{tabular}
-
-\medskip
-$\Rightarrow$ $220$ et $284$ sont bien amicaux.
-
-\bigskip
-
-\textbf{B.} Paire $(17296 \;;\; 18416)$
-
-\medskip
-\begin{tabular}{ll}
-$D^*(17296)$ & $= \{1, 2, 4, 8, 16, 23, 46, 47, 92, 94, 184, 188, 376, 752, 1081, 2162, 4324, 8648\}$ \\[4pt]
-             & $\sum D^*(17296) = 18416$ \quad $\checkmark$ \\[8pt]
-$D^*(18416)$ & $= \{1, 2, 4, 8, 16, 1151, 2302, 4604, 9208\}$ \\[4pt]
-             & $\sum D^*(18416) = 17296$ \quad $\checkmark$
-\end{tabular}
-
-\medskip
-$\Rightarrow$ $17296$ et $18416$ sont bien amicaux.
+\def\arraystretch{1.7}
+\begin{tabularx}{\linewidth}{*{4}{X}}
+\textbf{A.} & \textbf{B.} & \textbf{C.} & \textbf{D.} \\
+$(+5)\cdot(-3)=-15$    & $(-45):(+5)=-9$   & $(+56):(-7)=-8$       & $(+27):(+9)=+3$      \\
+$(+6)\cdot(+12)=+72$   & $(-14):(-7)=+2$   & $(-10)\cdot(-11)=+110$& $(+4)\cdot(-8)=-32$  \\
+$(+8)\cdot(+11)=+88$   & $(+90):(-10)=-9$  & $(+9)\cdot(-9)=-81$   & $(-63):(+7)=-9$      \\
+$(+42):(-7)=-6$        & $(-72):(+12)=-6$  & $(-12):(-4)=+3$       & $(+11)\cdot(-11)=-121$\\
+$(+96):(-12)=-8$       & $(+6)\cdot(-4)=-24$ & $(+25):(-5)=-5$     & $(-49):(-7)=+7$      \\
+$(+48):(-8)=-6$        & $(+28):(+7)=+4$   & $(-5)\cdot(-6)=+30$   & $(+10):(-10)=-1$     \\
+\end{tabularx}
 
 \end{solution}
 \end{document}
