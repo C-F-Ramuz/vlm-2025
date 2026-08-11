@@ -13,7 +13,7 @@ Règles :
 `addition` `soustraction` `multiplication` `division` `facteurs-premiers` `decomposition` `nombres-premiers` `diviseurs` `multiples` `pgdc` `ppmc` `divisibilite`
 
 **Ch02 · Entiers relatifs**
-`nombres-relatifs` `valeur-absolue` `oppose` `droite-graduee`
+`entiers-relatifs` `valeur-absolue` `oppose` `droite-graduee`
 
 **Ch03 · Fractions & pourcentages**
 `fractions` `simplification` `operations-fractions` `nombres-decimaux` `pourcentages` `taux` `augmentation` `diminution` `comparaison`

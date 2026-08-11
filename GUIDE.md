@@ -1,16 +1,20 @@
 # VLM Mathématiques — Guide du projet
 
+site: https://c-f-ramuz.github.io/vlm-2025/
+mot de passe corrigés: vlm2025prof
+
 ## Structure du projet
 
 ```
 vlm-math/
 │
 ├── exercices/                  ← SOURCE DE VÉRITÉ
-│   ├── ch01-algebre/
+│   ├── msn31-nombre/
 │   │   ├── ex-001.tex
 │   │   └── ex-002.tex
-│   ├── ch02-geometrie/
-│   └── ch03-trigonometrie/
+│   ├── msn32-geometrie/
+│   └── msn33-algebre/
+│   └── msn35-stats/
 │
 ├── scripts/
 │   └── vlm_build.py            ← Script principal (parse + DB + JSON + LaTeX)
@@ -39,19 +43,15 @@ Chaque exercice est un fichier `.tex` autonome avec un en-tête YAML :
 
 ```latex
 % ---
-% id: EX-CH01-001          ← Identifiant unique (obligatoire)
+% id: EX-CH01-001           ← Identifiant unique (obligatoire)
 % titre: Mon exercice       ← Titre court
-% chapitre: 1               ← Numéro de chapitre
+% chapitre_id: 1            ← Numéro de chapitre
 % chapitre_nom: Algèbre     ← Nom du chapitre
-% section: Équations        ← Section dans le chapitre
-% tags: [équation, algèbre] ← Mots-clés pour la recherche
-% niveau: secondaire2       ← Niveau scolaire
+% annee_scolaire: 9H        ← Niveau scolaire
 % difficulte: 2             ← 1=facile, 2=moyen, 3=difficile
+% tags: [équation, algèbre] ← Mots-clés pour la recherche
 % auteur: Dupont M.         ← Auteur
 % annee: 2025               ← Année
-% objectifs:                ← Objectifs pédagogiques
-%   - Savoir faire X
-%   - Comprendre Y
 % ---
 
 \begin{exercice}{EX-CH01-001}{Titre de l'exercice}

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1780038509.60299 "latex/templates/main.tex" "latex/output/vlm-eleve.pdf" "vlm-eleve" 1780038510.80011 0
+["pdflatex"] 1780049244.66439 "latex/templates/main.tex" "latex/output/vlm-eleve.pdf" "vlm-eleve" 1780049245.89739 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc" 1529098226 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -166,6 +166,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def" 1702241854 8818 aa5157b46368efebf023abff55611467 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty" 1702241854 18245 97e6be180cf07bb6f7008cfdaaecfce5 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/carlisle/scalefnt.sty" 1137109962 1360 df2086bf924b14b72d6121fe9502fcdb ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/colortbl/colortbl.sty" 1720383029 12726 67708fc852a887b2ba598148f60c3756 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty" 1738874546 52272 63d293bc0d496619edb57585740861a2 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1739306980 46850 d87daedc2abdc653769a6f1067849fe0 ""
@@ -259,12 +260,12 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1744044949 5501089 f2ffe622267f7d8bfaba0244ab87ba6f ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1744045165 3345724 206314134903a93a7c7adc83c1a3999e ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "latex/generated/ch01-nombres-entiers-divisibilite.tex" 1780038508.11164 35631 cd92969538b45086291f7f92e6171f01 ""
-  "latex/generated/ch02-nombres-relatifs.tex" 1780038508.1119 10591 85e158294829dca0cfa8bccc10503e58 ""
-  "latex/generated/ch03-fractions-pourcentages.tex" 1780038508.11214 12559 a4d3fae4671511cc01ff07102884e342 ""
-  "latex/output/vlm-eleve.aux" 1780038510.68107 3028 258ab7393e35aa6fdfa34c2eec4b132b "pdflatex"
-  "latex/output/vlm-eleve.toc" 1780038510.68222 230 06b2e7cdf103e50887d2fe1177280a23 "pdflatex"
-  "latex/templates/main.tex" 1780038508.11233 2644 d9c2b517d13cb8d301ddd2726a08aa42 ""
+  "latex/generated/ch01-nombres-entiers-divisibilite.tex" 1780049243.19022 35631 cd92969538b45086291f7f92e6171f01 ""
+  "latex/generated/ch02-nombres-relatifs.tex" 1780049243.1905 24041 d3693e4a55ece46e51e088d1710d19ee ""
+  "latex/generated/ch03-fractions-pourcentages.tex" 1780049243.19066 12559 42e47c28ad15a104d934dae2c0c74fd1 ""
+  "latex/output/vlm-eleve.aux" 1780049245.77608 3196 88cfd6ea7ff07b225c113834242c90b0 "pdflatex"
+  "latex/output/vlm-eleve.toc" 1780049245.77747 230 e6b37880b3b3e5c3c13d6eaecca98071 "pdflatex"
+  "latex/templates/main.tex" 1780049243.19084 2651 d84ef787e3aee2a7d6ce65e854d04466 ""
   (generated)
   "latex/output/vlm-eleve.aux"
   "latex/output/vlm-eleve.log"
