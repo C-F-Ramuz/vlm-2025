@@ -158,7 +158,39 @@
     .modal-btn.primary { background:var(--green); color:white; }
     .modal-btn.secondary { background:var(--gray); color:var(--text); }
     .error-msg { color:#e74c3c; font-size:.8rem; margin-bottom:.5rem; display:none; }
+  .pdf-container {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #525659;
+  }
+  .pdf-canvas-wrap {
+    overflow-y: auto;
+    max-height: 600px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+  }
+  .pdf-canvas-wrap canvas {
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    max-width: 100%;
+  }
+  .pdf-toolbar {
+    background: #3d3d3d;
+    padding: .4rem .8rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .8rem;
+    color: #ccc;
+  }
+  .pdf-loading {
+    color: #ccc; font-size: .85rem; padding: 2rem; text-align: center;
+  }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
 <body>
 
@@ -344,21 +376,30 @@ function render() {
             🔒 PDF corrigé
           </button>
         </div>
-        <iframe
-          src="pdfs/exercices/${e.id}.pdf"
-          width="100%"
-          height="500px"
-          style="border:1px solid var(--border);border-radius:8px;">
-        </iframe>
+        <div class="pdf-container">
+          <div class="pdf-toolbar">📄 Aperçu PDF</div>
+          <div class="pdf-canvas-wrap" id="pdf-wrap-${e.id}">
+            <div class="pdf-loading">Chargement du PDF…</div>
+          </div>
+        </div>
       </div>
     </div>
   `).join("");
 
-  // Expand/collapse
+  // Expand/collapse + chargement PDF
   list.querySelectorAll(".exercise-card").forEach(card => {
     card.addEventListener("click", e => {
       if (e.target.classList.contains("copy-btn")) return;
+      const wasExpanded = card.classList.contains("expanded");
       card.classList.toggle("expanded");
+      if (!wasExpanded) {
+        const id = card.dataset.id;
+        const wrap = document.getElementById(`pdf-wrap-${id}`);
+        if (wrap && wrap.querySelector(".pdf-loading")) {
+          const pdfUrl = `pdfs/exercices/${id}.pdf`;
+          renderPDF(pdfUrl, wrap);
+        }
+      }
     });
   });
 }
@@ -418,6 +459,35 @@ document.getElementById("searchInput").addEventListener("input", e => {
   activeFilters.search = e.target.value.trim();
   render();
 });
+
+// ── Rendu PDF avec PDF.js ─────────────────────────────────────
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+async function renderPDF(url, container) {
+  try {
+    const pdf = await pdfjsLib.getDocument(url).promise;
+    container.innerHTML = "";
+    for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+      const page = await pdf.getPage(pageNum);
+      const viewport = page.getViewport({ scale: 1.5 });
+      const canvas = document.createElement("canvas");
+      canvas.width  = viewport.width;
+      canvas.height = viewport.height;
+      container.appendChild(canvas);
+      await page.render({
+        canvasContext: canvas.getContext("2d"),
+        viewport
+      }).promise;
+    }
+  } catch {
+    container.innerHTML = `
+      <div class="pdf-loading">
+        PDF non disponible en local.<br>
+        <small>Il sera visible une fois mis en ligne sur GitHub.</small>
+      </div>`;
+  }
+}
 
 loadData();
 </script>

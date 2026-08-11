@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.11)  11 AUG 2026 08:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.11)  11 AUG 2026 08:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -35,9 +35,9 @@ Package: babel 2024/01/07 v24.1 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2023-12-19 v3.5r French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language80). Reported on input line 91.
+(babel)             (\language69). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language80). Reported on input line 92.
+(babel)             (\language69). Reported on input line 92.
 \FB@stdchar=\count197
 Package babel Info: Making : an active character on input line 420.
 Package babel Info: Making ; an active character on input line 421.
@@ -976,7 +976,7 @@ Local configuration file tkz-euclide.cfg found and used
 (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-protractor.tex
 2024/02/04 5.06c tkz-obj-eu-protractor.tex
 )))
-LaTeX Font Info:    Trying to load font information for T1+qag on input line 9.
+LaTeX Font Info:    Trying to load font information for T1+qag on input line 8.
 
  (/usr/share/texmf/tex/latex/tex-gyre/t1qag.fd
 File: t1qag.fd 2009/09/25 v1.2 font definition file for T1/qag
@@ -984,28 +984,28 @@ File: t1qag.fd 2009/09/25 v1.2 font definition file for T1/qag
 (latex/output/individual-corrige/EX-CH02-013-corrige.aux)
 \openout1 = `EX-CH02-013-corrige.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Info: Redefining \degres on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Info: Redefining \degres on input line 8.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 9.
+(french.ldf)             reported on input line 8.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 9.
-LaTeX Info: Redefining \up on input line 9.
+(french.ldf)             reported on input line 8.
+LaTeX Info: Redefining \up on input line 8.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1065,27 +1065,27 @@ e
 ))
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 10.
-Package mdframed Info: Not enough space on this page on input line 10.
+(mdframed)              on input line 9.
+Package mdframed Info: Not enough space on this page on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-Underfull \hbox (badness 1910) in paragraph at lines 80--80
+Underfull \hbox (badness 1910) in paragraph at lines 79--79
 []|$\OT1/cmr/m/n/12 (+100) + (+47) =
  []
 
 
-Underfull \hbox (badness 1838) in paragraph at lines 80--80
+Underfull \hbox (badness 1838) in paragraph at lines 79--79
 []|$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 54) + (+100) =
  []
 
 
-Underfull \hbox (badness 4872) in paragraph at lines 80--80
+Underfull \hbox (badness 4872) in paragraph at lines 79--79
 []|$\OT1/cmr/m/n/12 (+64) + (+95) =
  []
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 80--81
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 79--80
 [][] 
  []
 
@@ -1093,85 +1093,85 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 80--81
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
 dvips/tex-gyre/q-ec.enc}]
-Underfull \hbox (badness 1769) in paragraph at lines 93--93
+Underfull \hbox (badness 1769) in paragraph at lines 92--92
 []|$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 33) : (\OMS/cmsy/m/n/1
 2 ^^@\OT1/cmr/m/n/12 10) =
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 93--93
+Underfull \hbox (badness 1769) in paragraph at lines 92--92
 []|$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 13) : (\OMS/cmsy/m/n/1
 2 ^^@\OT1/cmr/m/n/12 26) =
  []
 
 
-Underfull \hbox (badness 4569) in paragraph at lines 93--93
+Underfull \hbox (badness 4569) in paragraph at lines 92--92
 []|$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 100) \OMS/cmsy/m/n/12 
 ^^A \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 10) =
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 93--93
+Underfull \hbox (badness 4621) in paragraph at lines 92--92
 []|$\OT1/cmr/m/n/12 (+46) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/1
 2 ^^@\OT1/cmr/m/n/12 72) =
  []
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 93--94
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 92--93
 [][] 
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 106--106
+Underfull \hbox (badness 1776) in paragraph at lines 105--105
 []|$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 13) + (\OMS/cmsy/m/n/1
 2 ^^@\OT1/cmr/m/n/12 191) =
  []
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 106--107
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 105--106
 [][] 
  []
 
 [2]
-Underfull \hbox (badness 1810) in paragraph at lines 119--119
+Underfull \hbox (badness 1810) in paragraph at lines 118--118
 []|$\OT1/cmr/m/n/12 (+12) : (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 24) =
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 119--119
+Underfull \hbox (badness 3312) in paragraph at lines 118--118
 []|$\OT1/cmr/m/n/12 (+45) : (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2) =
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 119--119
+Underfull \hbox (badness 1810) in paragraph at lines 118--118
 []|$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 100) : (+8) =
  []
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 119--119
+Underfull \hbox (badness 3260) in paragraph at lines 118--118
 []|$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 63) : (\OMS/cmsy/m/n/1
 2 ^^@\OT1/cmr/m/n/12 5) =
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 119--119
+Underfull \hbox (badness 4621) in paragraph at lines 118--118
 []|$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 25) \OMS/cmsy/m/n/12 ^
 ^@ \OT1/cmr/m/n/12 (+75) =
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 119--119
+Underfull \hbox (badness 3312) in paragraph at lines 118--118
 []|$\OT1/cmr/m/n/12 (+27) : (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2) =
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 119--119
+Underfull \hbox (badness 4621) in paragraph at lines 118--118
 []|$\OT1/cmr/m/n/12 (+22) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/1
 2 ^^@\OT1/cmr/m/n/12 88) =
  []
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 119--120
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 118--119
 [][] 
  []
 

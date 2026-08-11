@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.11)  11 AUG 2026 08:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.11)  11 AUG 2026 08:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -37,9 +37,9 @@ Package: babel 2024/01/07 v24.1 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2023-12-19 v3.5r French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language80). Reported on input line 91.
+(babel)             (\language69). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language80). Reported on input line 92.
+(babel)             (\language69). Reported on input line 92.
 \FB@stdchar=\count197
 Package babel Info: Making : an active character on input line 420.
 Package babel Info: Making ; an active character on input line 421.
@@ -978,7 +978,7 @@ Local configuration file tkz-euclide.cfg found and used
 (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-protractor.tex
 2024/02/04 5.06c tkz-obj-eu-protractor.tex
 )))
-LaTeX Font Info:    Trying to load font information for T1+qag on input line 9.
+LaTeX Font Info:    Trying to load font information for T1+qag on input line 8.
 
  (/usr/share/texmf/tex/latex/tex-gyre/t1qag.fd
 File: t1qag.fd 2009/09/25 v1.2 font definition file for T1/qag
@@ -986,28 +986,28 @@ File: t1qag.fd 2009/09/25 v1.2 font definition file for T1/qag
 (latex/output/individual/EX-CH03-009.aux)
 \openout1 = `EX-CH03-009.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Info: Redefining \degres on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Info: Redefining \degres on input line 8.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 9.
+(french.ldf)             reported on input line 8.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 9.
-LaTeX Info: Redefining \up on input line 9.
+(french.ldf)             reported on input line 8.
+LaTeX Info: Redefining \up on input line 8.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1067,21 +1067,21 @@ e
 ))
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 10.
-Package mdframed Info: Not enough space on this page on input line 10.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+(mdframed)              on input line 9.
+Package mdframed Info: Not enough space on this page on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (47.43513pt too wide) in paragraph at lines 16--211
+Overfull \hbox (47.43513pt too wide) in paragraph at lines 15--210
 [][] 
  []
 
