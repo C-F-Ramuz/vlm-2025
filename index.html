@@ -119,7 +119,7 @@
     }
 
     .copy-btn {
-      margin-top: .75rem; background: var(--blue); color: white; border: none;
+      background: var(--blue); color: white; border: none;
       border-radius: 7px; padding: .5rem 1.1rem; font-size: .82rem; font-family: inherit;
       cursor: pointer; display: flex; align-items: center; gap: .4rem;
       transition: background .15s;
@@ -331,23 +331,25 @@ function render() {
         <span style="margin-left:auto;font-size:.75rem;color:var(--muted)">${e.auteur || ''}</span>
       </div>
       <div class="ex-body">
-        <div style="font-size:.82rem;color:var(--muted);margin-bottom:.5rem">
-          🎯 ${e.objectifs?.join(" · ") || ""}
+        <div style="display:flex;gap:.5rem;margin-bottom:.75rem;flex-wrap:wrap">
+          <button class="copy-btn" onclick="copyLatex(event, '${e.id}')">
+            📋 Copier le LaTeX
+          </button>
+          <a class="copy-btn" href="pdfs/exercices/${e.id}.pdf"
+             target="_blank" style="text-decoration:none">
+            📄 PDF élève
+          </a>
+          <button class="copy-btn" style="background:#6c757d"
+             onclick="openCorrige('pdfs/exercices/${e.id}-corrige.pdf')">
+            🔒 PDF corrigé
+          </button>
         </div>
-        <div class="latex-preview">${escHtml(e.latex_exercice)}</div>
-<div style="display:flex;gap:.5rem;margin-top:.75rem;flex-wrap:wrap">
-  <button class="copy-btn" onclick="copyLatex(event, '${e.id}')">
-    📋 Copier le LaTeX
-  </button>
-  <a class="copy-btn" href="pdfs/exercices/${e.id}.pdf"
-     target="_blank" style="text-decoration:none">
-    📄 PDF élève
-  </a>
-  <button class="copy-btn" style="background:#6c757d"
-     onclick="openCorrige('pdfs/exercices/${e.id}-corrige.pdf')">
-    🔒 PDF corrigé
-  </button>
-</div>
+        <iframe
+          src="pdfs/exercices/${e.id}.pdf"
+          width="100%"
+          height="500px"
+          style="border:1px solid var(--border);border-radius:8px;">
+        </iframe>
       </div>
     </div>
   `).join("");
@@ -389,12 +391,7 @@ function openCorrige(url) {
 }
 
 
-document.addEventListener("DOMContentLoaded", function() {
-document.getElementById("btnAcceder").addEventListener("click", checkPassword);
-  document.getElementById("modalOverlay").addEventListener("click", function(e) {
-    if (e.target === this) closeModal();
-  });
-});
+
 
 // ── Event listeners ───────────────────────────────────────────
 document.addEventListener("click", e => {
