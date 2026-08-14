@@ -104,7 +104,7 @@ make build
 
 # 5. Pousser et créer une Pull Request
 git add .
-git commit -m "Ajout exercice EX-CH02-012 : vecteurs colinéaires"
+git commit -m "Ajout nouveaux exercices"
 git push
 
 # → GitHub Actions compile automatiquement les PDFs
