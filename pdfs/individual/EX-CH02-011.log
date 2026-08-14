@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.14)  14 AUG 2026 09:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.14)  14 AUG 2026 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -37,9 +37,9 @@ Package: babel 2024/01/07 v24.1 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2023-12-19 v3.5r French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language30). Reported on input line 91.
+(babel)             (\language42). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language30). Reported on input line 92.
+(babel)             (\language42). Reported on input line 92.
 \FB@stdchar=\count197
 Package babel Info: Making : an active character on input line 420.
 Package babel Info: Making ; an active character on input line 421.
@@ -1097,10 +1097,10 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 23582 strings out of 474222
- 495895 string characters out of 5748733
+ 23580 strings out of 474222
+ 495835 string characters out of 5748733
  1933975 words of memory out of 5000000
- 45277 multiletter control sequences out of 15000+600000
+ 45275 multiletter control sequences out of 15000+600000
  574521 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,12n,126p,1206b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
