@@ -16,7 +16,7 @@ TMPL_DIR   = $(LATEX_DIR)/templates
 OUT_DIR    = $(LATEX_DIR)/output
 SCRIPT     = scripts/vlm_build.py
 
-.PHONY: build eleve corrige all site clean
+.PHONY: build eleve corrige all site clean test-eleve test-corrige
 
 ## ── 1. Build : parse + DB + JSON ──────────────────────────────
 build:
@@ -61,3 +61,26 @@ clean:
 	  -o -name "*.toc" -o -name "*.fls" \
 	  -o -name "*.fdb_latexmk" | xargs rm -f
 	@echo "✅ Nettoyage terminé"
+	
+## ── Test exercice individuel ───────────────────────────────────
+test-eleve:
+	@read -p "ID de l'exercice (ex: EX-CH01-001): " id; \
+	$(PYTHON) $(SCRIPT); \
+	mkdir -p latex/output/individual; \
+	rm -f latex/output/individual/$$id*.pdf latex/output/individual/$$id*.aux \
+	      latex/output/individual/$$id*.log latex/output/individual/$$id*.fls \
+	      latex/output/individual/$$id*.fdb_latexmk; \
+	pdflatex -output-directory=latex/output/individual \
+	  "\input{latex/individual/$$id}"; \
+	open latex/output/individual/$$id.pdf
+
+test-corrige:
+	@read -p "ID de l'exercice (ex: EX-CH01-001): " id; \
+	$(PYTHON) $(SCRIPT); \
+	mkdir -p latex/output/individual; \
+	rm -f latex/output/individual/$$id*.pdf latex/output/individual/$$id*.aux \
+	      latex/output/individual/$$id*.log latex/output/individual/$$id*.fls \
+	      latex/output/individual/$$id*.fdb_latexmk; \
+	pdflatex -output-directory=latex/output/individual \
+	  "\def\AVECSOLUTIONS{1}\input{latex/individual/$$id}"; \
+	open latex/output/individual/$$id.pdf

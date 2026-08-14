@@ -1,0 +1,43 @@
+\documentclass[12pt, a4paper]{book}
+
+% ── Définitions partagées (couleurs, \rc, exercice, solution) ──
+\input{latex/templates/commun}
+
+\usepackage{hyperref}\hypersetup{colorlinks=false,pdfborder={0 0 0}}
+\usepackage{bookmark}
+\usepackage{fancyhdr}
+
+% ── Table des matières ──
+\setcounter{tocdepth}{0}
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapaftersnum}{}
+
+% ── En-têtes ──
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\thepage\ — Vive les maths}
+\fancyhead[RO]{Vive les maths\ — \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ============================================================
+\begin{document}
+
+\title{{\Huge\textbf{Vive les Maths}}\\[0.5em]
+       \large Recueil d'exercices
+       \ifdefined\AVECSOLUTIONS
+         \\[0.3em]\textcolor{vlmgreen}{\large — Version corrigée —}
+       \fi}
+\author{Daniel Bussy}
+\date{Édition 2025}
+\maketitle
+\tableofcontents
+
+\newpage
+\input{latex/generated/ch01-nombres-entiers-divisibilite}
+\input{latex/generated/ch02-nombres-relatifs}
+\input{latex/generated/ch03-fractions-pourcentages}
+
+\end{document}

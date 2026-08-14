@@ -25,25 +25,62 @@
 \definecolor{vlmgray}{RGB}{245, 245, 245}
 \definecolor{vlmgreen}{RGB}{0, 130, 80}
 
+\usepackage[thicklines]{cancel}\newcommand\Colxcancel[2][black]{\renewcommand\CancelColor{\color{#1}}\xcancel{#2}}
+
+% ── Commande \sol{question}{réponse} et \colSolution ──
+\usepackage{etoolbox}
+\providetoggle{question}
+\ifdefined\AVECSOLUTIONS
+  \togglefalse{question}
+\else
+  \toggletrue{question}
+\fi
+\ifdefined\AVECSOLUTIONS
+  \colorlet{colSolution}{vlmgreen}
+\else
+  \colorlet{colSolution}{white}
+\fi
+% \colSolution utilisable comme commande (\textcolor{\colSolution}{...})
+% ou comme couleur directe (\textcolor{colSolution}{...})
+\newcommand{\colSolution}{colSolution}
+\newcommand{\sol}[2]{\iftoggle{question}{#1}{{\color{colSolution}#2}}}
+
 % ── Réponse mise en couleur ──
 \newcommand{\rc}[1]{\textcolor{vlmgreen}{\textbf{#1}}}
 
 % ── Titre de l'exercice dans un encadré ──
 \newcommand{\titrexercice}[2]{%
-  \begin{mdframed}[
-    backgroundcolor=vlmgray,
-    linecolor=black,
-    linewidth=1.5pt,
-    innerleftmargin=10pt,
-    innerrightmargin=10pt,
-    innertopmargin=6pt,
-    innerbottommargin=6pt,
-    skipabove=1em,
-    skipbelow=0.5em
-  ]
-  \textbf{Exercice #1}%
-  \ifx&#2&\else\hfill\textbf{#2}\fi
-  \end{mdframed}
+  \ifdefined\AVECSOLUTIONS
+    \begin{mdframed}[
+      backgroundcolor=vlmgreen!15,
+      linecolor=vlmgreen,
+      linewidth=1.5pt,
+      innerleftmargin=10pt,
+      innerrightmargin=10pt,
+      innertopmargin=6pt,
+      innerbottommargin=6pt,
+      skipabove=1em,
+      skipbelow=0.5em
+    ]
+    \textbf{Corrigé #1}%
+    \ifx&#2&\else\hfill\textbf{#2}\fi
+    \end{mdframed}
+  \else
+    \begin{mdframed}[
+      backgroundcolor=vlmgray,
+      linecolor=black,
+      linewidth=1.5pt,
+      innerleftmargin=10pt,
+      innerrightmargin=10pt,
+      innertopmargin=6pt,
+      innerbottommargin=6pt,
+      skipabove=1em,
+      skipbelow=0.5em
+    ]
+    \textbf{Exercice #1}%
+    \ifx&#2&\else\hfill\textbf{#2}\fi
+    \end{mdframed}
+  \fi
 }
 
 % ── Corps de l'exercice sans cadre ──

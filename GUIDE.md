@@ -57,10 +57,6 @@ Chaque exercice est un fichier `.tex` autonome avec un en-tête YAML :
 \begin{exercice}{EX-CH01-001}{Titre de l'exercice}
   ...énoncé en LaTeX...
 \end{exercice}
-
-\begin{solution}{EX-CH01-001}
-  ...solution en LaTeX...
-\end{solution}
 ```
 
 ---
@@ -76,9 +72,11 @@ cp exercices/ch01-algebre/ex-001.tex exercices/ch01-algebre/ex-042.tex
 make build
 
 # Générer les PDFs
-make all          # les deux versions
-make eleve        # version élève seulement
-make corrige      # version corrigée seulement
+make all            # les deux versions
+make eleve          # version élève seulement
+make corrige        # version corrigée seulement
+make test-eleve     # un seul exercice élève
+make test-corrige   # un seul exercice corrigé
 
 # Lancer le site en local
 make site         # → http://localhost:8080
@@ -105,34 +103,12 @@ git checkout -b ajout/ch02-exercices-vecteurs
 make build
 
 # 5. Pousser et créer une Pull Request
-git add exercices/ch02-geometrie/ex-012.tex
+git add .
 git commit -m "Ajout exercice EX-CH02-012 : vecteurs colinéaires"
 git push
 
 # → GitHub Actions compile automatiquement les PDFs
 # → La PR peut être relue par un collègue avant merge
-```
-
----
-
-## Recherche dans la base SQLite
-
-```bash
-# Ouvrir la base en ligne de commande
-sqlite3 vlm.db
-
-# Tous les exercices d'un chapitre
-SELECT id, titre FROM exercices WHERE chapitre = 1;
-
-# Exercices par tag
-SELECT e.id, e.titre FROM exercices e
-JOIN tags t ON t.exercice_id = e.id
-WHERE t.tag = 'discriminant';
-
-# Exercices faciles de trigonométrie
-SELECT id, titre, difficulte FROM exercices
-WHERE chapitre_nom = 'Trigonométrie' AND difficulte = 1
-ORDER BY id;
 ```
 
 ---
