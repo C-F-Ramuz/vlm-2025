@@ -85,28 +85,16 @@ Décompose chaque nombre ci-dessous en un produit de facteurs premiers.
 \def\arraystretch{1.7}
 \begin{tabularx}{\linewidth}{*{3}{X}}
 \textbf{A.} & \textbf{B.} & \textbf{C.} \\
-$255  = \dotfill$ & $1340 = \dotfill$ & $720  = \dotfill$ \\
-$450  = \dotfill$ & $140  = \dotfill$ & $378  = \dotfill$ \\
-$84   = \dotfill$ & $342  = \dotfill$ & $270  = \dotfill$ \\
-$42   = \dotfill$ & $280  = \dotfill$ & $210  = \dotfill$ \\
-$600  = \dotfill$ & $144  = \dotfill$ & $117  = \dotfill$ \\
-$52   = \dotfill$ & $1450 = \dotfill$ & $480  = \dotfill$ \\
+$255  =$ \sol{\dotfill}{$3 \times 5 \times 17$} & $1340 =$ \sol{\dotfill}{$2^2 \times 5 \times 67$} & $720  =$ \sol{\dotfill}{$2^4 \times 3^2 \times 5$} \\
+$450  =$ \sol{\dotfill}{$2 \times 3^2 \times 5^2$} & $140  =$ \sol{\dotfill}{$2^2 \times 5 \times 7$} & $378  =$ \sol{\dotfill}{$2 \times 3^3 \times 7$} \\
+$84   =$ \sol{\dotfill}{$2^2 \times 3 \times 7$} & $342  =$ \sol{\dotfill}{$2 \times 3^2 \times 19$} & $270  =$ \sol{\dotfill}{$2 \times 3^3 \times 5$} \\
+$42   =$ \sol{\dotfill}{$2 \times 3 \times 7$} & $280  =$ \sol{\dotfill}{$2^3 \times 5 \times 7$} & $210  =$ \sol{\dotfill}{$2 \times 3 \times 5 \times 7$} \\
+$600  =$ \sol{\dotfill}{$2^3 \times 3 \times 5^2$} & $144  =$ \sol{\dotfill}{$2^4 \times 3^2$} & $117  =$ \sol{\dotfill}{$3^2 \times 13$} \\
+$52   =$ \sol{\dotfill}{$52   = 2^2 \times 13$} & $1450 =$ \sol{\dotfill}{$2 \times 5^2 \times 29$} & $480  =$ \sol{\dotfill}{$2^5 \times 3 \times 5$} \\
 \end{tabularx}
 
 \end{exercice}
-\begin{solution}{2}
 
-\begin{tabular}{p{5cm} p{5cm} p{5cm}}
-\textbf{A.} & \textbf{B.} & \textbf{C.} \\[6pt]
-$255  = 3 \times 5 \times 17$          & $1340 = 2^2 \times 5 \times 67$  & $720  = 2^4 \times 3^2 \times 5$   \\[8pt]
-$450  = 2 \times 3^2 \times 5^2$       & $140  = 2^2 \times 5 \times 7$   & $378  = 2 \times 3^3 \times 7$     \\[8pt]
-$84   = 2^2 \times 3 \times 7$         & $342  = 2 \times 3^2 \times 19$  & $270  = 2 \times 3^3 \times 5$     \\[8pt]
-$42   = 2 \times 3 \times 7$           & $280  = 2^3 \times 5 \times 7$   & $210  = 2 \times 3 \times 5 \times 7$ \\[8pt]
-$600  = 2^3 \times 3 \times 5^2$       & $144  = 2^4 \times 3^2$          & $117  = 3^2 \times 13$             \\[8pt]
-$52   = 2^2 \times 13$                 & $1450 = 2 \times 5^2 \times 29$  & $480  = 2^5 \times 3 \times 5$     \\[8pt]
-\end{tabular}
-\def\arraystretch{1}
-\end{solution}
 
 \begin{exercice}{3}{Diviseurs}
 
@@ -116,57 +104,49 @@ Détermine l'ensemble des diviseurs des nombres suivants :
 \textbf{A.}
 
 \medskip
-\begin{tabularx}{\linewidth}{*{10}{>{\centering\arraybackslash}X}}
+\sol{\begin{tabularx}{\linewidth}{*{10}{>{\centering\arraybackslash}X}}
 34 & 46 & 57  & 100 & 120 & 150 & 215 & 250  & 430   & 1250 \\
+\end{tabularx}}%
+{\def\arraystretch{1.2}
+\begin{tabularx}{\linewidth}{lX}
+$D(34)$   & $= \{1, 2, 17, 34\}$ \\
+$D(46)$   & $= \{1, 2, 23, 46\}$ \\
+$D(120)$  & $= \{1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120\}$ \\
+$D(150)$  & $= \{1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 150\}$ \\
+$D(215)$  & $= \{1, 5, 43, 215\}$ \\
+$D(250)$  & $= \{1, 2, 5, 10, 25, 50, 125, 250\}$ \\
+$D(100)$  & $= \{1, 2, 4, 5, 10, 20, 25, 50, 100\}$ \\
+$D(57)$   & $= \{1, 3, 19, 57\}$ \\
+$D(1250)$ & $= \{1, 2, 5, 10, 25, 50, 125, 250, 625, 1250\}$ \\
+$D(430)$  & $= \{1, 2, 5, 10, 43, 86, 215, 430\}$ \\
 \end{tabularx}
+\def\arraystretch{1}}
 
 \vspace{20pt}
 
 \textbf{B.}
 
 \medskip
-\begin{tabularx}{\linewidth}{*{10}{>{\centering\arraybackslash}X}}
+\sol{\begin{tabularx}{\linewidth}{*{10}{>{\centering\arraybackslash}X}}
 130 & 134 & 246 & 300 & 320 & 460 & 620 & 850  & 750 & 1840\\
+\end{tabularx}}%
+{\def\arraystretch{1.2}
+\begin{tabularx}{\linewidth}{lX}
+$D(134)$  & $= \{1, 2, 67, 134\}$ \\
+$D(246)$  & $= \{1, 2, 3, 6, 41, 82, 123, 246\}$ \\
+$D(320)$  & $= \{1, 2, 4, 5, 8, 10, 16, 20, 32, 40, 64, 80, 160, 320\}$ \\
+$D(460)$  & $= \{1, 2, 4, 5, 10, 20, 23, 46, 92, 115, 230, 460\}$ \\
+$D(620)$  & $= \{1, 2, 4, 5, 10, 20, 31, 62, 124, 155, 310, 620\}$ \\
+$D(850)$  & $= \{1, 2, 5, 10, 17, 25, 34, 50, 85, 170, 425, 850\}$ \\
+$D(300)$  & $= \{1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 25, 30, 50, 60, 75, 100, 150, 300\}$ \\
+$D(750)$  & $= \{1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 125, 150, 250, 375, 750\}$ \\
+$D(1840)$ & $= \{1, 2, 4, 5, 8, 10, 16, 20, 23, 40, 46, 80, 92, 115, 184, 230, 368, 460, 920, 1840\}$ \\
+$D(130)$  & $= \{1, 2, 5, 10, 13, 26, 65, 130\}$ \\
 \end{tabularx}
+\def\arraystretch{1}}
 
 \end{exercice}
-\begin{solution}{3}
 
-\textbf{Série 1}
-
-\medskip
-\begin{tabular}{ll}
-$D(34)$   & $= \{1, 2, 17, 34\}$ \\[4pt]
-$D(46)$   & $= \{1, 2, 23, 46\}$ \\[4pt]
-$D(120)$  & $= \{1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120\}$ \\[4pt]
-$D(150)$  & $= \{1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 150\}$ \\[4pt]
-$D(215)$  & $= \{1, 5, 43, 215\}$ \\[4pt]
-$D(250)$  & $= \{1, 2, 5, 10, 25, 50, 125, 250\}$ \\[4pt]
-$D(100)$  & $= \{1, 2, 4, 5, 10, 20, 25, 50, 100\}$ \\[4pt]
-$D(57)$   & $= \{1, 3, 19, 57\}$ \\[4pt]
-$D(1250)$ & $= \{1, 2, 5, 10, 25, 50, 125, 250, 625, 1250\}$ \\[4pt]
-$D(430)$  & $= \{1, 2, 5, 10, 43, 86, 215, 430\}$ \\
-\end{tabular}
-
-\bigskip
-
-\textbf{Série 2}
-
-\medskip
-\begin{tabular}{ll}
-$D(134)$  & $= \{1, 2, 67, 134\}$ \\[4pt]
-$D(246)$  & $= \{1, 2, 3, 6, 41, 82, 123, 246\}$ \\[4pt]
-$D(320)$  & $= \{1, 2, 4, 5, 8, 10, 16, 20, 32, 40, 64, 80, 160, 320\}$ \\[4pt]
-$D(460)$  & $= \{1, 2, 4, 5, 10, 20, 23, 46, 92, 115, 230, 460\}$ \\[4pt]
-$D(620)$  & $= \{1, 2, 4, 5, 10, 20, 31, 62, 124, 155, 310, 620\}$ \\[4pt]
-$D(850)$  & $= \{1, 2, 5, 10, 17, 25, 34, 50, 85, 170, 425, 850\}$ \\[4pt]
-$D(300)$  & $= \{1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 25, 30, 50, 60, 75, 100, 150, 300\}$ \\[4pt]
-$D(750)$  & $= \{1, 2, 3, 5, 6, 10, 15, 25, 30, 50, 75, 125, 150, 250, 375, 750\}$ \\[4pt]
-$D(1840)$ & $= \{1, 2, 4, 5, 8, 10, 16, 20, 23, 40, 46, 80, 92, 115, 184, 230, 368, 460, 920, 1840\}$ \\[4pt]
-$D(130)$  & $= \{1, 2, 5, 10, 13, 26, 65, 130\}$ \\
-\end{tabular}
-
-\end{solution}
 
 \begin{exercice}{4}{Crible d'Ératosthène et formule d'Euler}
 
@@ -303,29 +283,28 @@ Un \textbf{nombre parfait} est un nombre naturel non nul qui est égal à la som
 Parmi les nombres suivants, lesquels sont parfaits ?
 
 \bigskip
-\begin{tabularx}{\linewidth}{*{5}{>{\centering\arraybackslash}X}}
+\sol{\begin{tabularx}{\linewidth}{*{5}{>{\centering\arraybackslash}X}}
 6 & 28 & 496 & 875 & 8128\\
-\end{tabularx}
-
-\end{exercice}
-\begin{solution}{5}
-
+\end{tabularx}}%
+{
 On détermine les diviseurs stricts de chaque nombre, puis on vérifie si leur somme est égale au nombre.
 
-\bigskip
+\vspace{20pt}
+\def\arraystretch{1.2}
+\begin{tabularx}{\linewidth}{lXlc}
+$D^*(6)$    & $= \{1, 2, 3\}$ & $\sum = 6$    & $\checkmark$ \\
+$D^*(28)$   & $= \{1, 2, 4, 7, 14\}$                                             & $\sum = 28$  & $\checkmark$ \\
+$D^*(496)$  & $= \{1, 2, 4, 8, 16, 31, 62, 124, 248\}$                           & $\sum = 496$  & $\checkmark$ \\
+$D^*(875)$  & $= \{1, 5, 7, 25, 35, 125, 175\}$                                  & $\sum = 373 \neq 875$ & $\times$ \\
+$D^*(8128)$ & $= \{1, 2, 4, 8, 16, 32, 64, 127, 254, 508, 1016, 2032, 4064\}$   & $\sum = 8128$ & $\checkmark$ \\
+\end{tabularx}
+\def\arraystretch{1}
 
-\begin{tabular}{llll}
-$D^*(6)$    & $= \{1, 2, 3\}$                                                    & $1+2+3 = 6$    & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
-$D^*(28)$   & $= \{1, 2, 4, 7, 14\}$                                             & $1+2+4+7+14 = 28$  & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
-$D^*(496)$  & $= \{1, 2, 4, 8, 16, 31, 62, 124, 248\}$                           & $1+2+4+8+16+31+62+124+248 = 496$  & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
-$D^*(875)$  & $= \{1, 5, 7, 25, 35, 125, 175\}$                                  & $1+5+7+25+35+125+175 = 373 \neq 875$ & $\Rightarrow$ non parfait $\times$ \\[6pt]
-$D^*(8128)$ & $= \{1, 2, 4, 8, 16, 32, 64, 127, 254, 508, 1016, 2032, 4064\}$   & $\sum = 8128$ & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
-\end{tabular}
+\vspace{20pt}
+Les nombres parfaits parmi ceux proposés sont donc : 6, 28, 496 et 8128.
+}
+\end{exercice}
 
-\bigskip
-Les nombres parfaits parmi ceux proposés sont donc : $\mathbf{6}$, $\mathbf{28}$, $\mathbf{496}$ et $\mathbf{8128}$.
-
-\end{solution}
 
 \begin{exercice}{6}{PGDC et PPMC}
 
@@ -335,94 +314,92 @@ Recherche le PGDC et le PPMC des nombres suivants :
 \textbf{A.}
 
 \medskip
+\sol{
 \def\arraystretch{1.7}
 \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}XXXXp{4cm}>{\centering\arraybackslash}XXXXp{4cm}}
 \textbf{L.} & 34 & et & 26    && \textbf{M.} & 130 & et & 260 & \\
 \textbf{O.} & 25 & et & 45    && \textbf{A.} & 108 & et & 225 & \\
 \textbf{V.} & 16 & et & 18    && \textbf{T.} & 375 & et & 2070 & \\
 \textbf{E.} & 120 & et & 300  && \textbf{H.} & 12 & et & 8 & \\
+\end{tabularx}}
+{\footnotesize
+\medskip
+\def\arraystretch{1.7}
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}lp{6.3cm}XX}
+\textbf{L.} & $34 = 2 \times 17$ et $26 = 2 \times 13$ &PGDC(34,26) = 2& PPMC(34,26) = 442 \\
+\textbf{O.} &$25 = 5^2$ et $45 = 3^2 \times 5$&PGDC(25,45) = 5&PPMC(25,45) = 225 \\
+\textbf{V.} &$16 = 2^4$ et $18 = 2 \times 3^2$&PGDC(16,18) = 2&PPMC(16,18) = 144 \\
+\textbf{E.} &$120 = 2^3 \times 3 \times 5$ et $300 = 2^2 \times 3 \times 5^2$&PGDC(120,300) = 60&PPMC(120,300) = 600 \\
 \end{tabularx}
+
+\medskip
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}lp{6.3cm}XX}
+\textbf{M.} &$130 = 2 \times 5 \times 13$ et $260 = 2^2 \times 5 \times 13$&PGDC(130,260) = 130&PPMC(130,260) = 260 \\
+\textbf{A.} &$108 = 2^2 \times 3^3$ et $225 = 3^2 \times 5^2$&PGDC(108,225) = 9&PPMC(108,225) = 2700 \\
+\textbf{T.} &$375 = 3 \times 5^3$ et $2070 = 2 \times 3^2 \times 5 \times 23$&PGDC(375,2070) = 15&PPMC(375,2070) = 51750 \\
+\textbf{H.} &$12 = 2^2 \times 3$ et $8 = 2^3$&PGDC(12,8) = 4&PPMC(12,8) = 24 \\
+\end{tabularx}
+\def\arraystretch{1}}
 
 \vspace{20pt}
 \textbf{B.}
 
 \medskip
+\sol{
+\def\arraystretch{1.7}
 \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}XXXXp{4cm}>{\centering\arraybackslash}XXXXXp{3cm}}
 \textbf{L.} & 382 & et & 675&& \textbf{M.} & 180&  et &378&& \\
 \textbf{I.} & 528 & et  & 204&& \textbf{A.} & 384 & et &132&& \\
 \textbf{E.} & 25 & et  & 16&& \textbf{T.} & 45& et &90&& \\
 \textbf{B.} & 54 & et & 36&& \textbf{H.} & 384,& 126& et &132& \\
+\end{tabularx}}
+{\footnotesize
+\medskip
+\def\arraystretch{1.7}
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}lp{6.3cm}XX}
+\textbf{L.} &$382 = 2 \times 191$ et $675 = 3^3 \times 5^2$&PGDC(382,675) = 1&PPMC(382,675) = 257850 \\
+\textbf{I.} &$528 = 2^4 \times 3 \times 11$ et $204 = 2^2 \times 3 \times 17$&PGDC(528,204) = 12&PPMC(528,204) = 8976 \\
+\textbf{E.} &$25 = 5^2$ et $16 = 2^4$&PGDC(25,16) = 1& PPMC(25,16) = 400\\
+\textbf{B.} &$54 = 2 \times 3^3$  et $36 = 2^2 \times 3^2$&PGDC(54,36) = 18& PPMC(54,36) = 108\\
 \end{tabularx}
 
+\medskip
+\def\arraystretch{1.7}
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}lp{6.3cm}XX}
+\textbf{M.} &$180 = 2^2 \times 3^2 \times 5$ et $378 = 2 \times 3^3 \times 7$&PGDC(180,378) = 18&PPMC(180,378) = 3780 \\
+\textbf{A.} &$384 = 2^7 \times 3$et $132 = 2^2 \times 3 \times 11$&PGDC(384,132) = 12&PPMC(384,132) = 4224 \\
+\textbf{T.} &$45 = 3^2 \times 5$ et $90 = 2 \times 3^2 \times 5$&PGDC(45,90) = 45&PPMC(45,90) = 90 \\
+\textbf{H.} &$384 = 2^7 \times 3$ et $126 = 2 \times 3^2 \times 7$ et $132 = 2^2 \times 3 \times 11$&PGDC(384,126,132) = 6& PPMC(384,126,132) = 21504\\
+\end{tabularx}
+\def\arraystretch{1}}
 \end{exercice}
-\begin{solution}{6}
 
-\textbf{Série 1}
-
-\medskip
-\begin{tabular}{ll}
-\textbf{L.} $34 = 2 \times 17$ \quad $26 = 2 \times 13$
-  & $\text{PGDC}(34,26) = 2$ \quad $\text{PPMC}(34,26) = 442$ \\[6pt]
-\textbf{M.} $130 = 2 \times 5 \times 13$ \quad $260 = 2^2 \times 5 \times 13$
-  & $\text{PGDC}(130,260) = 130$ \quad $\text{PPMC}(130,260) = 260$ \\[6pt]
-\textbf{O.} $25 = 5^2$ \quad $45 = 3^2 \times 5$
-  & $\text{PGDC}(25,45) = 5$ \quad $\text{PPMC}(25,45) = 225$ \\[6pt]
-\textbf{A.} $108 = 2^2 \times 3^3$ \quad $225 = 3^2 \times 5^2$
-  & $\text{PGDC}(108,225) = 9$ \quad $\text{PPMC}(108,225) = 2700$ \\[6pt]
-\textbf{V.} $16 = 2^4$ \quad $18 = 2 \times 3^2$
-  & $\text{PGDC}(16,18) = 2$ \quad $\text{PPMC}(16,18) = 144$ \\[6pt]
-\textbf{T.} $375 = 3 \times 5^3$ \quad $2070 = 2 \times 3^2 \times 5 \times 23$
-  & $\text{PGDC}(375,2070) = 15$ \quad $\text{PPMC}(375,2070) = 51750$ \\[6pt]
-\textbf{E.} $120 = 2^3 \times 3 \times 5$ \quad $300 = 2^2 \times 3 \times 5^2$
-  & $\text{PGDC}(120,300) = 60$ \quad $\text{PPMC}(120,300) = 600$ \\[6pt]
-\textbf{H.} $12 = 2^2 \times 3$ \quad $8 = 2^3$
-  & $\text{PGDC}(12,8) = 4$ \quad $\text{PPMC}(12,8) = 24$ \\[6pt]
-\end{tabular}
-
-\bigskip
-\textbf{Série 2}
-
-\medskip
-\begin{tabular}{ll}
-\textbf{L.} $382 = 2 \times 191$ \quad $675 = 3^3 \times 5^2$
-  & $\text{PGDC}(382,675) = 1$ \quad $\text{PPMC}(382,675) = 257850$ \\[6pt]
-\textbf{M.} $180 = 2^2 \times 3^2 \times 5$ \quad $378 = 2 \times 3^3 \times 7$
-  & $\text{PGDC}(180,378) = 18$ \quad $\text{PPMC}(180,378) = 3780$ \\[6pt]
-\textbf{I.} $528 = 2^4 \times 3 \times 11$ \quad $204 = 2^2 \times 3 \times 17$
-  & $\text{PGDC}(528,204) = 12$ \quad $\text{PPMC}(528,204) = 8976$ \\[6pt]
-\textbf{A.} $384 = 2^7 \times 3$ \quad $132 = 2^2 \times 3 \times 11$
-  & $\text{PGDC}(384,132) = 12$ \quad $\text{PPMC}(384,132) = 4224$ \\[6pt]
-\textbf{E.} $25 = 5^2$ \quad $16 = 2^4$
-  & $\text{PGDC}(25,16) = 1$ \quad $\text{PPMC}(25,16) = 400$ \\[6pt]
-\textbf{T.} $384 = 2^7 \times 3$ \quad $126 = 2 \times 3^2 \times 7$ \quad $132 = 2^2 \times 3 \times 11$
-  & $\text{PGDC}(384,126,132) = 6$ \quad $\text{PPMC}(384,126,132) = 21504$ \\[6pt]
-\textbf{B.} $54 = 2 \times 3^3$ \quad $36 = 2^2 \times 3^2$
-  & $\text{PGDC}(54,36) = 18$ \quad $\text{PPMC}(54,36) = 108$ \\[6pt]
-\textbf{H.} $45 = 3^2 \times 5$ \quad $90 = 2 \times 3^2 \times 5$
-  & $\text{PGDC}(45,90) = 45$ \quad $\text{PPMC}(45,90) = 90$ \\[6pt]
-\end{tabular}
-\def\arraystretch{1}
-
-\end{solution}
 
 \begin{exercice}{7}{Problèmes de PPMC et PGDC}
 
-\textbf{A.}
+\bigskip\textbf{A.}
 
 \medskip
-Louise collectionne des pièces de 20 centimes. Elle sait qu'elle en a moins de 250 (ce qui ferait exactement CHF\,50.00).
-Pour les compter, elle les range en piles. D'abord en piles de 7 pièces. Il n'en reste aucune. Ensuite en piles de 10 pièces. Il n'en reste aucune non plus
+Louise collectionne des pièces de 20 centimes. Elle sait qu'elle en a moins de 250 (ce qui ferait exactement CHF\,50.00). Pour les compter, elle les range en piles. D'abord en piles de 7 pièces. Il n'en reste aucune. Ensuite en piles de 10 pièces. Il n'en reste aucune non plus
 
 \begin{itemize}[label=$\blacktriangleright$]
 \item \textbf{Quelle somme d'argent Louise possède-t-elle ?}
 \end{itemize}
 
+\sol{}{Le nombre de pièces est un multiple de 74 et de 70, donc un multiple de $\text{PPMC}(74, 70)$.
+
+$74 = 2 \times 37$ \quad $70 = 2 \times 5 \times 7$ \quad $\Rightarrow \text{PPMC}(74,70) = 2 \times 5 \times 7 \times 37 = 2590$ pièces.
+
+Montant : $2590 \times 0.20 = CHF\ 518$ — supérieur à $CHF\ 50$, aucune solution valide dans la contrainte.
+
+\medskip
+\textit{Remarque : la contrainte « inférieur à CHF 50 » correspond à moins de 250 pièces. Or le PPMC est 2590. Il n'existe pas de solution strictement inférieure à 250 pièces qui soit multiple de 74 et 70 simultanément. L'exercice semble comporter une erreur de données.}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bigskip\textbf{B.}
 
 \medskip
-Diane collectionne des pièces de 10 centimes.
-Elle sait qu'elle en possède un montant compris entre CHF\,7.00 et CHF\,9.00. Pour les compter, elle les range en piles. D'abord en piles de 6 pièces.I n'en reste aucune. Ensuite en piles de 9 pièces. Il n'en reste aucune non plus
+Diane collectionne des pièces de 10 centimes. Elle sait qu'elle en possède un montant compris entre CHF\,7.00 et CHF\,9.00. Pour les compter, elle les range en piles. D'abord en piles de 6 pièces.I n'en reste aucune. Ensuite en piles de 9 pièces. Il n'en reste aucune non plus
 
 \begin{itemize}[label=$\blacktriangleright$]
 \item \textbf{Quelle somme d'argent Diane possède-t-elle ?}
@@ -432,9 +409,7 @@ Elle sait qu'elle en possède un montant compris entre CHF\,7.00 et CHF\,9.00. P
 \bigskip\textbf{C.}
 
 \medskip
-Aziz collectionne des pièces de 10 centimes. Il sait que l'ensemble de ses pièces représente un montant compris entre CHF\,6.00 et CHF\,7.00.
-
-Pour les compter, il les range en piles. D'abord en piles de 6 pièces. Il lui en reste 5. Ensuite en piles de 10 pièces. Il lui en reste 5 également.
+Aziz collectionne des pièces de 10 centimes. Il sait que l'ensemble de ses pièces représente un montant compris entre CHF\,6.00 et CHF\,7.00. Pour les compter, il les range en piles. D'abord en piles de 6 pièces. Il lui en reste 5. Ensuite en piles de 10 pièces. Il lui en reste 5 également.
 
 \begin{itemize}[label=$\blacktriangleright$]
 \item \textbf{Quelle somme d'argent Aziz possède-t-il ?}
@@ -468,8 +443,7 @@ Une parcelle rectangulaire mesure 240\,m sur 250\,m. On souhaite la clôturer en
 \bigskip\textbf{F.}
 
 \medskip
-Jupiter possède de nombreux satellites. Quatre d'entre eux effectuent
-leur révolution autour de Jupiter dans les durées suivantes~:
+Jupiter possède de nombreux satellites. Quatre d'entre eux effectuent leur révolution autour de Jupiter dans les durées suivantes:
 
 \begin{center}
 \begin{tabular}{lc}
@@ -484,7 +458,7 @@ leur révolution autour de Jupiter dans les durées suivantes~:
 \end{tabular}
 \end{center}
 
-En ce moment, les quatre satellites sont alignés dans la même direction depuis Jupiter.
+En ce moment, les quatre satellites sont alignés.
 
 \begin{itemize}[label=$\blacktriangleright$]
 \item \textbf{Dans combien de temps se retrouveront-ils dans cette configuration ?}
@@ -542,7 +516,7 @@ Le montant de la cotisation n'a pas varié pendant ces trois ans.
 
 \begin{itemize}[label=$\blacktriangleright$]
 \item \textbf{Quel est le montant de la cotisation, sachant qu'il est supérieur à CHF\,50.- ?}
-\item \textbf{Combien de membres cette société a-t-elle perdus entre la deuxième et la troisième année ?}
+\item \textbf{Combien de membres a-t-elle perdus entre la deuxième et la troisième année ?}
 \item \textbf{Quel est le montant de la cotisation, sachant qu'il est inférieur à CHF\,20.- et que la société n'a jamais compté plus de 150 membres ?}
 \end{itemize}
 
@@ -576,17 +550,18 @@ Une fleuriste dispose de 90 roses et 105 œillets. Elle souhaite réaliser des b
 \item \textbf{Quel est le nombre maximum de bouquets qu'elle peut composer ?}
 \item \textbf{Combien de roses et d'œillets comptera chaque bouquet ?}
 \end{itemize}
+
+\sol{}{$90 = 2 \times 3^2 \times 5$ \quad $105 = 3 \times 5 \times 7$
+
+$\text{PGDC}(90, 105) = 3 \times 5 = 15$
+
+\textbf{1)} La fleuriste peut composer au maximum $\mathbf{15\ bouquets}$.
+
+\textbf{2)} Chaque bouquet contiendra $90 \div 15 = \mathbf{6\ roses}$ et $105 \div 15 = \mathbf{7\ \oe illets}$.}
 \end{exercice}
 \begin{solution}{7}
 
-\textbf{A.} Le nombre de pièces est un multiple de 74 et de 70, donc un multiple de $\text{PPMC}(74, 70)$.
-
-$74 = 2 \times 37$ \quad $70 = 2 \times 5 \times 7$ \quad $\Rightarrow \text{PPMC}(74,70) = 2 \times 5 \times 7 \times 37 = 2590$ pièces.
-
-Montant : $2590 \times 0.20 = CHF\ 518$ — supérieur à $CHF\ 50$, aucune solution valide dans la contrainte.
-
-\medskip
-\textit{Remarque : la contrainte « inférieur à CHF 50 » correspond à moins de 250 pièces. Or le PPMC est 2590. Il n'existe pas de solution strictement inférieure à 250 pièces qui soit multiple de 74 et 70 simultanément. L'exercice semble comporter une erreur de données.}
+\textbf{A.} 
 
 \bigskip
 \textbf{B.} Le nombre de pièces est un multiple de $\text{PPMC}(80, 100)$.
@@ -725,17 +700,6 @@ $\text{PPMC}(7, 12, 15) = 2^2 \times 3 \times 5 \times 7 = 420$
 
 Les trois associations se réuniront toutes à nouveau dans $\mathbf{420\ jours}$.
 
-\bigskip
-\textbf{N.}
-
-$90 = 2 \times 3^2 \times 5$ \quad $105 = 3 \times 5 \times 7$
-
-$\text{PGDC}(90, 105) = 3 \times 5 = 15$
-
-\textbf{1)} La fleuriste peut composer au maximum $\mathbf{15\ bouquets}$.
-
-\textbf{2)} Chaque bouquet contiendra $90 \div 15 = \mathbf{6\ roses}$ et $105 \div 15 = \mathbf{7\ \oe illets}$.
-
 \end{solution}
 
 \begin{exercice}{8}{Nombres amicaux}
@@ -753,41 +717,37 @@ Vérifie les paires de nombres amicaux suivantes :
 \medskip
 La paire $(220 \;;\; 284)$ fut découverte par les Pythagoriciens. Elle fut considérée comme symbole de l'amitié.
 
+\sol{}{
+\vspace{20pt}
+\def\arraystretch{1.2}
+\begin{tabularx}{\linewidth}{lX}
+$D^*(220)$ & $= \{1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110\}$ \\
+& $=1+2+4+5+10+11+20+22+44+55+110 = 284$ \quad $\checkmark$ \\[8pt]
+$D^*(284)$ & $= \{1, 2, 4, 71, 142\}$ \\[4pt]
+           & $=1+2+4+71+142 = 220$ \quad $\checkmark$
+\end{tabularx}
+\def\arraystretch{1}
+
+$\Rightarrow$ 220 et 284 sont bien amicaux.}
+
 \vspace{20pt}
 \textbf{B.}
 
 \medskip
 La paire $(17296 \;;\; 18416)$ fut découverte par Fermat en 1636.
 
+\sol{}{
+\vspace{20pt}
+\def\arraystretch{1.2}
+\begin{tabularx}{\linewidth}{lX}
+$D^*(17296)$ & $= \{1, 2, 4, 8, 16, 23, 46, 47, 92, 94, 184, 188, 376, 752, 1081, 2162, 4324, 8648\}$ \\
+             & $=\sum D^*(17296) = 18416$ \quad $\checkmark$ \\
+$D^*(18416)$ & $= \{1, 2, 4, 8, 16, 1151, 2302, 4604, 9208\}$ \\
+             & $=\sum D^*(18416) = 17296$ \quad $\checkmark$
+\end{tabularx}
+\def\arraystretch{1}
+
+$\Rightarrow$ 17296 et 18416 sont bien amicaux.}
+
 \end{exercice}
-\begin{solution}{8}
 
-\textbf{A.} Paire $(220 \;;\; 284)$
-
-\medskip
-\begin{tabular}{ll}
-$D^*(220)$ & $= \{1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110\}$ \\[4pt]
-           & $1+2+4+5+10+11+20+22+44+55+110 = 284$ \quad $\checkmark$ \\[8pt]
-$D^*(284)$ & $= \{1, 2, 4, 71, 142\}$ \\[4pt]
-           & $1+2+4+71+142 = 220$ \quad $\checkmark$
-\end{tabular}
-
-\medskip
-$\Rightarrow$ $220$ et $284$ sont bien amicaux.
-
-\bigskip
-
-\textbf{B.} Paire $(17296 \;;\; 18416)$
-
-\medskip
-\begin{tabular}{ll}
-$D^*(17296)$ & $= \{1, 2, 4, 8, 16, 23, 46, 47, 92, 94, 184, 188, 376, 752, 1081, 2162, 4324, 8648\}$ \\[4pt]
-             & $\sum D^*(17296) = 18416$ \quad $\checkmark$ \\[8pt]
-$D^*(18416)$ & $= \{1, 2, 4, 8, 16, 1151, 2302, 4604, 9208\}$ \\[4pt]
-             & $\sum D^*(18416) = 17296$ \quad $\checkmark$
-\end{tabular}
-
-\medskip
-$\Rightarrow$ $17296$ et $18416$ sont bien amicaux.
-
-\end{solution}

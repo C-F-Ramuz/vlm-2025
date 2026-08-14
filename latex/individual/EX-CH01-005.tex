@@ -17,27 +17,26 @@ Un \textbf{nombre parfait} est un nombre naturel non nul qui est égal à la som
 Parmi les nombres suivants, lesquels sont parfaits ?
 
 \bigskip
-\begin{tabularx}{\linewidth}{*{5}{>{\centering\arraybackslash}X}}
+\sol{\begin{tabularx}{\linewidth}{*{5}{>{\centering\arraybackslash}X}}
 6 & 28 & 496 & 875 & 8128\\
-\end{tabularx}
-
-\end{exercice}
-\begin{solution}{EX-CH01-005}
-
+\end{tabularx}}%
+{
 On détermine les diviseurs stricts de chaque nombre, puis on vérifie si leur somme est égale au nombre.
 
-\bigskip
+\vspace{20pt}
+\def\arraystretch{1.2}
+\begin{tabularx}{\linewidth}{lXlc}
+$D^*(6)$    & $= \{1, 2, 3\}$ & $\sum = 6$    & $\checkmark$ \\
+$D^*(28)$   & $= \{1, 2, 4, 7, 14\}$                                             & $\sum = 28$  & $\checkmark$ \\
+$D^*(496)$  & $= \{1, 2, 4, 8, 16, 31, 62, 124, 248\}$                           & $\sum = 496$  & $\checkmark$ \\
+$D^*(875)$  & $= \{1, 5, 7, 25, 35, 125, 175\}$                                  & $\sum = 373 \neq 875$ & $\times$ \\
+$D^*(8128)$ & $= \{1, 2, 4, 8, 16, 32, 64, 127, 254, 508, 1016, 2032, 4064\}$   & $\sum = 8128$ & $\checkmark$ \\
+\end{tabularx}
+\def\arraystretch{1}
 
-\begin{tabular}{llll}
-$D^*(6)$    & $= \{1, 2, 3\}$                                                    & $1+2+3 = 6$    & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
-$D^*(28)$   & $= \{1, 2, 4, 7, 14\}$                                             & $1+2+4+7+14 = 28$  & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
-$D^*(496)$  & $= \{1, 2, 4, 8, 16, 31, 62, 124, 248\}$                           & $1+2+4+8+16+31+62+124+248 = 496$  & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
-$D^*(875)$  & $= \{1, 5, 7, 25, 35, 125, 175\}$                                  & $1+5+7+25+35+125+175 = 373 \neq 875$ & $\Rightarrow$ non parfait $\times$ \\[6pt]
-$D^*(8128)$ & $= \{1, 2, 4, 8, 16, 32, 64, 127, 254, 508, 1016, 2032, 4064\}$   & $\sum = 8128$ & $\Rightarrow$ \textbf{parfait} $\checkmark$ \\[6pt]
-\end{tabular}
+\vspace{20pt}
+Les nombres parfaits parmi ceux proposés sont donc : 6, 28, 496 et 8128.
+}
+\end{exercice}
 
-\bigskip
-Les nombres parfaits parmi ceux proposés sont donc : $\mathbf{6}$, $\mathbf{28}$, $\mathbf{496}$ et $\mathbf{8128}$.
-
-\end{solution}
 \end{document}

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.7)  14 AUG 2026 10:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.7)  14 AUG 2026 07:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\def\AVECSOLUTIONS{1}\input{latex/individual/EX-CH01-001}
-(./latex/individual/EX-CH01-001.tex
+**\def\AVECSOLUTIONS{1}\input{latex/individual/EX-CH01-004}
+(./latex/individual/EX-CH01-004.tex
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/size12.clo
@@ -1043,8 +1043,8 @@ LaTeX Font Info:    Trying to load font information for T1+qag on input line 8.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tex-gyre/t1qag.fd
 File: t1qag.fd 2009/09/25 v1.2 font definition file for T1/qag
 )
-No file EX-CH01-001.aux.
-\openout1 = `EX-CH01-001.aux'.
+No file EX-CH01-004.aux.
+\openout1 = `EX-CH01-004.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -1141,39 +1141,35 @@ Package mdframed Info: Not enough space on this page on input line 9.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd)
-Overfull \hbox (2.05223pt too wide) in paragraph at lines 72--72
- []|\T1/qag/m/n/12 100| 
- []
-
-
 
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}]
-(latex/output/individual/EX-CH01-001.aux)
+(latex/output/individual/EX-CH01-004.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 23750 strings out of 473190
- 504232 string characters out of 5715801
- 971307 words of memory out of 5000000
- 46441 multiletter control sequences out of 15000+600000
- 575746 words of font info for 62 fonts, out of 8000000 for 9000
+ 23743 strings out of 473190
+ 504162 string characters out of 5715801
+ 901691 words of memory out of 5000000
+ 46436 multiletter control sequences out of 15000+600000
+ 569617 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,129p,1231b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
-.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagb.pfb><
-/usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagr.pfb>
-Output written on latex/output/individual/EX-CH01-001.pdf (1 page, 94575 bytes)
+ 128i,10n,129p,1231b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagb.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagr.pfb>
+Output written on latex/output/individual/EX-CH01-004.pdf (1 page, 97665 bytes)
 .
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 37 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

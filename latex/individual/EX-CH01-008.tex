@@ -8,22 +8,29 @@
 \begin{document}
 \begin{exercice}{EX-CH01-008}{Problèmes de PPMC et PGDC}
 
-\textbf{A.}
+\bigskip\textbf{A.}
 
 \medskip
-Louise collectionne des pièces de 20 centimes. Elle sait qu'elle en a moins de 250 (ce qui ferait exactement CHF\,50.00).
-Pour les compter, elle les range en piles. D'abord en piles de 7 pièces. Il n'en reste aucune. Ensuite en piles de 10 pièces. Il n'en reste aucune non plus
+Louise collectionne des pièces de 20 centimes. Elle sait qu'elle en a moins de 250 (ce qui ferait exactement CHF\,50.00). Pour les compter, elle les range en piles. D'abord en piles de 7 pièces. Il n'en reste aucune. Ensuite en piles de 10 pièces. Il n'en reste aucune non plus
 
 \begin{itemize}[label=$\blacktriangleright$]
 \item \textbf{Quelle somme d'argent Louise possède-t-elle ?}
 \end{itemize}
 
+\sol{}{Le nombre de pièces est un multiple de 74 et de 70, donc un multiple de $\text{PPMC}(74, 70)$.
+
+$74 = 2 \times 37$ \quad $70 = 2 \times 5 \times 7$ \quad $\Rightarrow \text{PPMC}(74,70) = 2 \times 5 \times 7 \times 37 = 2590$ pièces.
+
+Montant : $2590 \times 0.20 = CHF\ 518$ — supérieur à $CHF\ 50$, aucune solution valide dans la contrainte.
+
+\medskip
+\textit{Remarque : la contrainte « inférieur à CHF 50 » correspond à moins de 250 pièces. Or le PPMC est 2590. Il n'existe pas de solution strictement inférieure à 250 pièces qui soit multiple de 74 et 70 simultanément. L'exercice semble comporter une erreur de données.}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bigskip\textbf{B.}
 
 \medskip
-Diane collectionne des pièces de 10 centimes.
-Elle sait qu'elle en possède un montant compris entre CHF\,7.00 et CHF\,9.00. Pour les compter, elle les range en piles. D'abord en piles de 6 pièces.I n'en reste aucune. Ensuite en piles de 9 pièces. Il n'en reste aucune non plus
+Diane collectionne des pièces de 10 centimes. Elle sait qu'elle en possède un montant compris entre CHF\,7.00 et CHF\,9.00. Pour les compter, elle les range en piles. D'abord en piles de 6 pièces.I n'en reste aucune. Ensuite en piles de 9 pièces. Il n'en reste aucune non plus
 
 \begin{itemize}[label=$\blacktriangleright$]
 \item \textbf{Quelle somme d'argent Diane possède-t-elle ?}
@@ -33,9 +40,7 @@ Elle sait qu'elle en possède un montant compris entre CHF\,7.00 et CHF\,9.00. P
 \bigskip\textbf{C.}
 
 \medskip
-Aziz collectionne des pièces de 10 centimes. Il sait que l'ensemble de ses pièces représente un montant compris entre CHF\,6.00 et CHF\,7.00.
-
-Pour les compter, il les range en piles. D'abord en piles de 6 pièces. Il lui en reste 5. Ensuite en piles de 10 pièces. Il lui en reste 5 également.
+Aziz collectionne des pièces de 10 centimes. Il sait que l'ensemble de ses pièces représente un montant compris entre CHF\,6.00 et CHF\,7.00. Pour les compter, il les range en piles. D'abord en piles de 6 pièces. Il lui en reste 5. Ensuite en piles de 10 pièces. Il lui en reste 5 également.
 
 \begin{itemize}[label=$\blacktriangleright$]
 \item \textbf{Quelle somme d'argent Aziz possède-t-il ?}
@@ -69,8 +74,7 @@ Une parcelle rectangulaire mesure 240\,m sur 250\,m. On souhaite la clôturer en
 \bigskip\textbf{F.}
 
 \medskip
-Jupiter possède de nombreux satellites. Quatre d'entre eux effectuent
-leur révolution autour de Jupiter dans les durées suivantes~:
+Jupiter possède de nombreux satellites. Quatre d'entre eux effectuent leur révolution autour de Jupiter dans les durées suivantes:
 
 \begin{center}
 \begin{tabular}{lc}
@@ -85,7 +89,7 @@ leur révolution autour de Jupiter dans les durées suivantes~:
 \end{tabular}
 \end{center}
 
-En ce moment, les quatre satellites sont alignés dans la même direction depuis Jupiter.
+En ce moment, les quatre satellites sont alignés.
 
 \begin{itemize}[label=$\blacktriangleright$]
 \item \textbf{Dans combien de temps se retrouveront-ils dans cette configuration ?}
@@ -143,7 +147,7 @@ Le montant de la cotisation n'a pas varié pendant ces trois ans.
 
 \begin{itemize}[label=$\blacktriangleright$]
 \item \textbf{Quel est le montant de la cotisation, sachant qu'il est supérieur à CHF\,50.- ?}
-\item \textbf{Combien de membres cette société a-t-elle perdus entre la deuxième et la troisième année ?}
+\item \textbf{Combien de membres a-t-elle perdus entre la deuxième et la troisième année ?}
 \item \textbf{Quel est le montant de la cotisation, sachant qu'il est inférieur à CHF\,20.- et que la société n'a jamais compté plus de 150 membres ?}
 \end{itemize}
 
@@ -177,17 +181,18 @@ Une fleuriste dispose de 90 roses et 105 œillets. Elle souhaite réaliser des b
 \item \textbf{Quel est le nombre maximum de bouquets qu'elle peut composer ?}
 \item \textbf{Combien de roses et d'œillets comptera chaque bouquet ?}
 \end{itemize}
+
+\sol{}{$90 = 2 \times 3^2 \times 5$ \quad $105 = 3 \times 5 \times 7$
+
+$\text{PGDC}(90, 105) = 3 \times 5 = 15$
+
+\textbf{1)} La fleuriste peut composer au maximum $\mathbf{15\ bouquets}$.
+
+\textbf{2)} Chaque bouquet contiendra $90 \div 15 = \mathbf{6\ roses}$ et $105 \div 15 = \mathbf{7\ \oe illets}$.}
 \end{exercice}
 \begin{solution}{EX-CH01-008}
 
-\textbf{A.} Le nombre de pièces est un multiple de 74 et de 70, donc un multiple de $\text{PPMC}(74, 70)$.
-
-$74 = 2 \times 37$ \quad $70 = 2 \times 5 \times 7$ \quad $\Rightarrow \text{PPMC}(74,70) = 2 \times 5 \times 7 \times 37 = 2590$ pièces.
-
-Montant : $2590 \times 0.20 = CHF\ 518$ — supérieur à $CHF\ 50$, aucune solution valide dans la contrainte.
-
-\medskip
-\textit{Remarque : la contrainte « inférieur à CHF 50 » correspond à moins de 250 pièces. Or le PPMC est 2590. Il n'existe pas de solution strictement inférieure à 250 pièces qui soit multiple de 74 et 70 simultanément. L'exercice semble comporter une erreur de données.}
+\textbf{A.} 
 
 \bigskip
 \textbf{B.} Le nombre de pièces est un multiple de $\text{PPMC}(80, 100)$.
@@ -325,17 +330,6 @@ $7$ \quad $12 = 2^2 \times 3$ \quad $15 = 3 \times 5$
 $\text{PPMC}(7, 12, 15) = 2^2 \times 3 \times 5 \times 7 = 420$
 
 Les trois associations se réuniront toutes à nouveau dans $\mathbf{420\ jours}$.
-
-\bigskip
-\textbf{N.}
-
-$90 = 2 \times 3^2 \times 5$ \quad $105 = 3 \times 5 \times 7$
-
-$\text{PGDC}(90, 105) = 3 \times 5 = 15$
-
-\textbf{1)} La fleuriste peut composer au maximum $\mathbf{15\ bouquets}$.
-
-\textbf{2)} Chaque bouquet contiendra $90 \div 15 = \mathbf{6\ roses}$ et $105 \div 15 = \mathbf{7\ \oe illets}$.
 
 \end{solution}
 \end{document}
