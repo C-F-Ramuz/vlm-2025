@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1786683779.67683 "latex/individual/EX-CH02-012.tex" "latex/output/individual/EX-CH02-012.pdf" "EX-CH02-012" 1786683780.47058 0
+["pdflatex"] 1786698915.12042 "latex/individual/EX-CH02-012.tex" "latex/output/individual/EX-CH02-012.pdf" "EX-CH02-012" 1786698915.94973 0
   "/etc/texmf/web2c/texmf.cnf" 1786396813.29013 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -220,11 +220,11 @@
   "/usr/share/texmf/tex/latex/tex-gyre/t1qag.fd" 1480098840 1642 7286e0350ef6ff0a6f0254f8254a3851 ""
   "/usr/share/texmf/tex/latex/tex-gyre/tgadventor.sty" 1480098840 2110 5bcede25cab30ce726910a38df51d2a7 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1786683616.62304 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1786683722 8212173 e27b3bf237892f0d8c2388932d068c3b ""
-  "latex/individual/EX-CH02-012.tex" 1786683757.1878 1893 28192ee3b99c3f6098b20f95170cde0b ""
-  "latex/output/individual/EX-CH02-012.aux" 1786683780.36031 226 5af9876d33104197000f4b7c9d5a9a5e "pdflatex"
-  "latex/templates/commun.tex" 1786683412.36298 3180 9910da958bb8d979f34c2a77c1d46296 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1786698745.10766 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1786698792 8213956 f195fb37f577dd7b810fab6dd3adbc2c ""
+  "latex/individual/EX-CH02-012.tex" 1786698891.10043 1893 28192ee3b99c3f6098b20f95170cde0b ""
+  "latex/output/individual/EX-CH02-012.aux" 1786698915.83723 226 5af9876d33104197000f4b7c9d5a9a5e "pdflatex"
+  "latex/templates/commun.tex" 1786698331.13597 3180 9910da958bb8d979f34c2a77c1d46296 ""
   (generated)
   "latex/output/individual/EX-CH02-012.aux"
   "latex/output/individual/EX-CH02-012.log"

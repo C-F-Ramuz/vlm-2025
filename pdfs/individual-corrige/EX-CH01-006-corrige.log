@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.14)  14 AUG 2026 05:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.14)  14 AUG 2026 09:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -35,9 +35,9 @@ Package: babel 2024/01/07 v24.1 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2023-12-19 v3.5r French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language19). Reported on input line 91.
+(babel)             (\language30). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language19). Reported on input line 92.
+(babel)             (\language30). Reported on input line 92.
 \FB@stdchar=\count197
 Package babel Info: Making : an active character on input line 420.
 Package babel Info: Making ; an active character on input line 421.
@@ -1092,24 +1092,34 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
-dvips/tex-gyre/q-ec.enc}] (latex/output/individual-corrige/EX-CH01-006-corrige.
-aux)
+dvips/tex-gyre/q-ec.enc}]
+(latex/output/individual-corrige/EX-CH01-006-corrige.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 23595 strings out of 474222
- 496226 string characters out of 5748733
+ 23593 strings out of 474222
+ 496168 string characters out of 5748733
  1932975 words of memory out of 5000000
- 45287 multiletter control sequences out of 15000+600000
+ 45285 multiletter control sequences out of 15000+600000
  574978 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,129p,1235b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,129p,1235b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
@@ -1119,7 +1129,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist
 ublic/tex-gyre/qagb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qagr.pfb>
 
 Output written on latex/output/individual-corrige/EX-CH01-006-corrige.pdf (1 pa
-ge, 125658 bytes).
+ge, 125906 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
